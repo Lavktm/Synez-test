@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800;900&display=swap"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+     body, html {
+        height: 100%;
+        line-height: 1.8;
+      }
+      .bgimg-1{
+       background-image: url("./public/mask-group19@2x.png");
+        background-position: center;
+        background-size: cover;
+        height:538px ;
+        }
+        .bgimg-2 {
+          background-image: url("./public/mask-group20@2x.png");
+          background-position: center;
+          background-size: cover;
+          height:538px ;
+          min-height:538px;
+           width:'100%' ;
+      }
+      .w3-bar .w3-button {
+        padding: 16px;
+      }
+      </style>
+  </head>
+  <body>
+    <div class="w3-top">
+      <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <a href="#home" class="w3-bar-item w3-button w3-wide company-text">
+          <img class="company-logo" alt="" src="./public/group-754.svg" />
+          SYNEZ
+        </a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small bar-item-text ">
+          <a href="index.html" class="w3-bar-item w3-button" >Home</a>
+          <a href="./aboutUs/index.html"class="w3-bar-item w3-button">About us</a>
+          <a href="./softwareDevelopment/index.html" class="w3-bar-item w3-button"> Software Development</a>
+          <a href="./managedServices/index.html" class="w3-bar-item w3-button"> Managed Services</a>
+          <a href="./consulting/index.html" class="w3-bar-item w3-button">Consulting</a>
+          <a href="#contact" class="w3-bar-item w3-button">Contact Us</a>
+         </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+          <i class="fa fa-bars" style="font-size: 24px;"></i>
+        </a>
+      </div>
+    </div>
+    <!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+  <a href="./aboutUs/index.html" onclick="w3_close()" class="w3-bar-item w3-button">About us</a>
+  <a href="./softwareDevelopment/index.html" onclick="w3_close()" class="w3-bar-item w3-button">Software Development</a>
+  <a href="./managedServices/index.html" onclick="w3_close()" class="w3-bar-item w3-button"> Managed Services</a>
+  <a href="./consulting/index.html" onclick="w3_close()" class="w3-bar-item w3-button">Consulting</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contact Us</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="w3-display-container w3-wide bgimg-1" >
+      <div class="w3-display-middle w3-center ">
+        <div class="w3-col m6"  >
+    <span class="w3-we-text">WE</span>
+   </div>
+   <div class="w3-col m6"  >
+    <ul class="remove-bulletin" style="list-style-type: none; padding: 36px; margin: 0;">
+     <li class="w3-we-group-text">INNOVATE</li>
+      <li class="w3-we-group-text">ASSOCIATE</li>
+      <li class="w3-we-group-text">INSPIRE</li>
+    </ul>
+  </div>
+  </div>
+  </div>
+</header>
+<div class="w3-container" style="padding:32px 32px" >
+<div class="w3-col m6 w3-padding-64"  >
+  <span class="who-are-we">Who we are</span>
+  <p class="who-are-we-details">We provide IT guidance on the process of product  development by creating and implementing the bleeding-edge  technologies to achieve an overall goal.</p>
+  <button class="who-we-work-button">How We Work</button>
+</div>
+<div class="w3-col m6">
+<img class="w3-image w3-round-large" alt="" src="./public/mask-group23@2x.png"  width="100%" />
+</div>
+</div>
+</div>
+
+
+<div class="w3-container" style="padding:32px 32px" id="team">
+  <span class="who-are-we">What we do</span>
+  <div class="w3-row-padding" style="margin-top:32px">
+  <div class="w3-col l4 m6 w3-margin-bottom" style="display: grid;  grid-row-gap: 10px;">
+    <div class="w3-card w3-orange" style="padding: 16px 32px;">
+      <h3> <b>Consultation</b></h3>
+      <p>
+     Empowering clients with innovative technology for digital transformation success as we partner together to achieve your IT goals.
+     </p>
+     <button class="custom-button">
+      <img alt="" src="./public/group-174.svg" />
+      Go to consulting</button>
+     </div>
+     <img class="w3-image w3-round" alt="" src="./public/mask-group21@2x.png"   width="100%" height="100%"/>
+  </div>
+  <div class="w3-col l4 m6 w3-margin-bottom" style="display: grid;  grid-row-gap: 30px;">
+  <img class="w3-image w3-round" alt="" src="./public/mask-group24@2x.png"    width="100%" height="100%"/>
+     <div class="w3-card w3-aqua" style="padding: 16px 32px;">
+      <h3> <b>Software development</b></h3>
+      <p>
+        Tailored solutions aligned with your business culture and goals - trust us to exceed your expectations with proven list of satisfied clients.
+     </p>
+     <button class="custom-button">
+      <img alt="" src="./public/group-174.svg" />
+      Go to software development</button>
+     </div>
+  </div>
+
+  <div class="w3-col l4 m6 w3-margin-bottom" style="display: grid;  grid-row-gap: 8px;">
+    <img class="w3-image w3-round" alt="" src="./public/mask-group25@2x.png"    width="100%" height="100%" />
+       <div class="w3-card w3-purple" style="padding: 16px 32px;">
+        <h3> <b>Managed services</b></h3>
+        <p>
+          Efficiently manage your IT needs prioritize your core business activities with our reliable and secure managed IT services.
+
+       </p>
+       <button class="custom-button">
+        <img alt="" src="./public/group-174.svg" />
+        Go to managed services</button>
+       </div>
+       <img class="w3-image w3-round" alt="" src="./public/mask-group22@2x.png"    width="100%" height="100%"/>
+    </div>
+ 
+</div>
+</div>
+
+<header class="bgimg-2 w3-display-container w3-grayscale-min">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+  
+    <span class="w3-xxlarge"><b>Increasing the level <br> of customer <br> satisfaction in every <br> management</span>
+   </div>
+</header>
+
+
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="w3-purple">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+   <div class="w3-padding-16 w3-margin-left-32 w3-margin-right-32" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+   <div><div class="synez-text w3-padding-16" >SYNEZ
+  <img alt="" src="./public/group-75.svg" />
+   </div>
+    We offer businesses the <br>technologies they need to <br> become successful businesses <br> in today’s world.
+  </div>
+  <div class="w3-padding-32">
+    <span class="footer-heading-text " style="padding:8px 16px">Explore</span>
+    <br><a href="#about" class="w3-bar-item w3-button" >Home</a>
+    <br><a href="#about" class="w3-bar-item w3-button">About us</a>
+    <br><a href="#team" class="w3-bar-item w3-button"> Software Development</a>
+    <br><a href="#work" class="w3-bar-item w3-button"> Managed Services</a>
+    <br><a href="#pricing" class="w3-bar-item w3-button">Consulting</a>
+    <br><a href="#contact" class="w3-bar-item w3-button">Contact Us</a>
+ </div>
+ <div class="w3-padding-32" >
+ <span class="footer-heading-text">Keep in touch</span> 
+    <br>Address:  C56/30 Sector 62 Noida 201307, Uttar Pradesh, India
+    <br>Phone: +0120 3112279, +0120 3112280
+    <br>Mobile: +91 9711311790, +91 7290 040506
+    <br>Email:
+     <a class="infosyneztechcom7"href="mailto:info@syneztech.com" target="_blank">info@syneztech.com</a>
+  </div>
+  <div class="w3-padding-32"  style="display: flex; flex-wrap: wrap; justify-content: space-between;" >
+  <img class="image-border" alt="" src="./public/group-135.svg" />
+   <div  class="image-border linkedin-text w3-margin-left"><a>  <i class="fa fa-linkedin w3-hover-opacity"></i></a></div>
+   </div></div> 
+<div class="line"/>
+<div class="w3-padding-16">Copyright © 2023. Synez Technologies</div>
+</footer>
+</body>
+  <script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+     function w3_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+      } else {
+        mySidebar.style.display = 'block';
+      }
+    }
+    // Close the sidebar with the close button
+    function w3_close() {
+        mySidebar.style.display = "none";
+    }
+    </script>
+</html>
