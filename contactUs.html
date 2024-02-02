@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/png" href="./images/company_logo.png">
+    <title>Syneztech Contact Us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto"}
+
+    body, html {
+      height: 100%;
+      line-height: 1.8;
+    }
+
+    /* Full height image header */
+    .bgimg-1 {
+        position: relative; /* Necessary for positioning the pseudo-element */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("./images/contactUs_bg_img1.png");
+        height: auto;
+        width: '100%';
+       }
+       .bgimg-1::after {
+        content: ''; /* Pseudo-element content should be empty */
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.4); /* Black with opacity, adjust the last number as needed */
+        pointer-events: none; /* Ensures the overlay doesn't interfere with clicking/interacting with elements underneath */
+    }
+     .w3-bar .w3-button {
+      padding: 16px;
+    }
+    .w3-bar-item.w3-button.active {
+        color: #FF4500; 
+    }
+    .social-icon {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    background-color:'transparent'; /* Replace with your actual icon background color */
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px; /* Adjust as needed */
+    border: 1px solid #fff;
+    }
+    .social-icon i {
+    color: #fff; /* Replace with your actual icon color */
+    font-size: 18px; /* Adjust as needed */
+      }
+      .position-relative {
+  position: relative;
+}
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 10px 0;
+  border:  1px solid #fff;;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+ .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.banner {
+  background-image: url('./images/home_bg_img2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px; /* Or use 100vh for full viewport height */
+  width: 100vw; /* This will cover the full width of the viewport */
+  filter: brightness(0.7);
+  z-index: 1; 
+}
+
+.element {
+  padding: 32px 16px;
+}
+.element_1 {
+    padding: 32px 16px;
+  }
+  .leader-card {
+    border: 1.5px solid #CFCFCF;
+    padding: 10px;
+    background: #fff;
+}
+
+/* Media query for laptop screens (1024px and above) */
+@media screen and (min-width: 1024px) {
+  .element {
+    padding: 32px 110px;
+  }
+  .element_1 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-left: 110px;
+  }
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+ 
+  justify-content: center;
+  align-content: center;
+  padding: 0px 110px;
+  position: relative;
+  z-index:2;
+  }
+ 
+  .image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 176, 224, 0.60);
+    border-radius: 10px; /* Adjust the border radius as needed */
+}
+  </style>
+  </head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <div class="w3-bar-item"> 
+      <h1 class="w3-text-deep-blue w3-hide-small"><img style="margin-bottom:8px" alt="company logo" src="./images/company_logo.png"/><strong> SYNEZ</strong></h1>
+      <h2 class="w3-text-deep-blue w3-hide-medium w3-hide-large w3-padding-large"><img style="margin-bottom:8px" alt="company logo" src="./images/company_logo.png"/><strong> SYNEZ</strong></h2>
+    </div>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+        <a href="./index.html" class="w3-bar-item w3-button">Home</a>
+      <a href="./aboutUs.html" class="w3-bar-item w3-button">About us</a>
+      <a href="./softwareDevelopment.html" class="w3-bar-item w3-button "> Software Development</a>
+      <a href="./managedServices.html" class="w3-bar-item w3-button"> Managed Services</a>
+      <a href="./consulting.html" class="w3-bar-item w3-button">Consulting</a>
+      <a href="./contactUs.html" class="w3-bar-item w3-button active">Contact Us</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars" style="font-size: 24px;"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="./index.html" class="w3-bar-item w3-button">Home</a>
+      <a href="./aboutUs.html" class="w3-bar-item w3-button">About us</a>
+      <a href="./softwareDevelopment.html" class="w3-bar-item w3-button"> Software Development</a>
+      <a href="./managedServices.html" class="w3-bar-item w3-button"> Managed Services</a>
+      <a href="./consulting.html" class="w3-bar-item w3-button">Consulting</a>
+      <a href="./contactUs.html" class="w3-bar-item w3-button">Contact Us</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container  w3-text-white element" id="home">
+  <div class="grid-container"> 
+ 
+    <span class="w3-jumbo w3-text-light-grey w3-hide-small"><strong>WE</strong></span>
+    <span class="w3-text-light-grey w3-hide-large w3-hide-medium" style="font-size: 96px; margin-top:96px"><strong>WE</strong></span>
+  
+  
+    <span class="w3-xxxlarge  w3-hide-small  w3-padding-small" style="line-height:64px; margin-top:128px" ><strong>INNOVATE <br>ASSOCIATE <br>INSPIRE</strong> </span>
+    <span class="w3-hide-large w3-hide-medium  w3-padding-small w3-padding-48"   style="line-height:24px; margin-top:96px"><strong>INNOVATE <br>ASSOCIATE <br>INSPIRE</strong> </span>
+    </div>
+</header>
+
+ 
+<!---consulting-->
+<div class="w3-container element w3-padding-64">
+    <div class="w3-col m4 l4"  >
+        <h3 class="w3-xxlarge w3-hide-small">Let's talk!</h3>
+        <h3 class="w3-xlarge w3-hide-large w3-hide-medium">Let's talk!</h3>
+  
+      <p class="w3-large">Share your needs with us to gain a comprehensive understanding of your project.</p>
+    </div>
+    <div class="w3-col m8 l7" style="float: right;">
+      <form action="form-handler.php" method="post">
+        <p>
+        <div class="w3-col l4 m4">
+        <input class="w3-input w3-border" name="name" type="text" placeholder="Name" required name="Name">
+      </div>
+      <div class="w3-col l4 m4">
+        <input class="w3-input w3-border" name="email" type="text" placeholder="Email" required name="Email">
+      </div>
+      <div class="w3-col l4 m4">
+        <input class="w3-input w3-border" name="phone" type="number" placeholder="Phone" required name="Phone">
+      </div>
+        </p>
+       
+        <p><input class="w3-input w3-border" name="message" type="text" placeholder="Message" required name="Message" 
+          style=" height: 120px;"
+          ></p>
+        <p>
+     <button type="submit" class="w3-button w3-white" style="min-height: 40px; border:1px solid #c0c0c0"> SEND MESSAGE</button>
+    </p>
+      </form>
+    </div>
+    </div>
+    </div>
+      
+    <div class="w3-container element">
+        <div class="w3-row-padding" >
+            <div class="w3-col l4  m6  w3-padding-large">
+                <div class="w3-card-2" style="padding: 0px 24px;min-height:189px">
+            <div class="w3-center" >
+                <img  src="./images/location_img.png" class="w3-padding-16"/>
+                </div>
+               <p class="w3-large"><b>OUR LOCATION</b><br>C56/30 Sector 62 Noida 201307, Uttar Pradesh, India</p>
+            </div>
+        </div>
+            <div class="w3-col l4  m6  w3-padding-large">
+                <div class="w3-card-2" style="padding: 0px 24px;min-height:189px">
+                <div class="w3-center">
+                    <img  src="./images/phone_img.png" class="w3-padding-16"/>
+                    </div>
+                   <p class="w3-large"><b>CALL US</b><br>+91 9711311790</p>
+            </div>
+            </div>
+            <div class="w3-col l4  m6  w3-padding-large">
+                <div class="w3-card-2" style="padding: 0px 24px;min-height:189px">
+                <div class="w3-center">
+                    <img  src="./images/mail_img.png" class="w3-padding-16"/>
+                    </div>
+                   <p class="w3-large"><b>SEND US MAIL</b><br>
+                    info@syneztech.com</p>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="w3-container element">
+        <h3 class="w3-xxlarge w3-hide-small">Find us on goolge map</h3>
+        <h3 class="w3-xlarge w3-hide-large w3-hide-medium">Find us on goole map</h3>
+        <img src="./images/company_location.png" class="w3-image" style="width:100%;">
+      
+      </div>
+    <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="w3-deep-blue w3-padding-32 element">
+ <!--  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a> -->
+<div class="w3-row-padding">
+ <div class="w3-quarter">
+<h1 class="w3-text-white"><img  alt="company logo icon" src="./images/company_icon.png"/><strong> SYNEZ</strong></h1>
+<p class="w3-medium" style="font-size:40px;">We offer businesses the<br> technologies they need to<br> become successful businesses <br>in today’s world.</p>
+</div>
+ <div class="w3-quarter w3-medium w3-padding-small">
+    <h4 class="w3-padding-16">Explore</h4>
+    <p><a style="text-decoration:none"  href="#home">HOME</a></p>
+    <p><a style="text-decoration:none" href="#about">ABOUT US</a></p>
+    <p><a style="text-decoration:none"  href="#softwareDev">SOFTWARE DEVELOPMENT</a></p>
+    <p><a style="text-decoration:none" href="#MngSer">MANAGED SERVICES</a></p>
+    <p><a style="text-decoration:none" href="#Consulting">CONSULTING</a></p>
+ </div>
+ <div class="w3-quarter w3-medium w3-padding-small">
+    <h4 class="w3-padding-16">Keep in touch</h4>
+    <p>Address: C56/30 Sector 62 Noida 201307,<br> Uttar Pradesh, India</p>
+    <p>Phone: +0120 3112279, +0120 3112280</p>
+    <p>Mobile: +91 9711311790, +91 7290 040506</p>
+    <p>Email: <a href="mailto:info@syneztech.com">info@syneztech.com</a></p>
+ </div>
+    <div class="w3-quarter w3-medium w3-padding-small">
+        
+        <div class="social-icon w3-half">
+            <a href="mailto:info@example.com"><i class="fa fa-envelope w3-hover-opacity"></i></a>
+          </div>
+          <div class="social-icon w3-half">
+            <a href="https://www.linkedin.com/in/yourprofile"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+          </div>
+ </div></div>
+<div class="w3-border-top"> </div>
+ <div class="w3-padding-16">Copyright © 2023. Synez Technologies</div>
+ </footer>
+
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll('.w3-bar .w3-bar-item.w3-button').forEach(function(element) {
+        element.addEventListener('click', function() {
+            // Remove 'active' class from all elements
+            document.querySelectorAll('.w3-bar .w3-bar-item.w3-button').forEach(function(el) {
+                el.classList.remove('active');
+            });
+
+            // Add 'active' class to the clicked element
+            this.classList.add('active');
+        });
+    });
+});
+</script>
+
+</body>
+</html>

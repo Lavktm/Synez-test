@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" type="image/png" href="./images/company_logo.png">
+    <title>Syneztech Software Development</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto"}
+
+    body, html {
+      height: 100%;
+      line-height: 1.8;
+    }
+
+    /* Full height image header */
+    .bgimg-1 {
+     position: relative; /* Necessary for positioning the pseudo-element */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("./images/SD_bg_img1.png");
+    height: auto;
+    width: '100%';
+    }
+    .bgimg-1::after {
+      content: ''; /* Pseudo-element content should be empty */
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.4); /* Black with opacity, adjust the last number as needed */
+      pointer-events: none; /* Ensures the overlay doesn't interfere with clicking/interacting with elements underneath */
+  }
+     .w3-bar .w3-button {
+      padding: 16px;
+    }
+    .w3-bar-item.w3-button.active {
+        color: #FF4500; 
+    }
+    .social-icon {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    background-color:'transparent'; /* Replace with your actual icon background color */
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px; /* Adjust as needed */
+    border: 1px solid #fff;
+    }
+    .social-icon i {
+    color: #fff; /* Replace with your actual icon color */
+    font-size: 18px; /* Adjust as needed */
+      }
+      .position-relative {
+  position: relative;
+}
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 10px 0;
+  border:  1px solid #fff;;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+ .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.banner {
+  background-image: url('./images/home_bg_img2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px; /* Or use 100vh for full viewport height */
+  width: 100vw; /* This will cover the full width of the viewport */
+  filter: brightness(0.7);
+  z-index: 1; 
+}
+
+.element {
+  padding: 32px 16px;
+}
+.element_1 {
+    padding: 32px 16px;
+  }
+  .leader-card {
+    border: 1.5px solid #CFCFCF;
+    padding: 10px;
+    background: #fff;
+}
+
+/* Media query for laptop screens (1024px and above) */
+@media screen and (min-width: 1024px) {
+  .element {
+    padding: 32px 110px;
+  }
+  .element_1 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-left: 110px;
+  }
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  justify-content: center;
+  align-content: center;
+  padding: 0px 110px;
+}
+
+.grid-item {
+  border: 0.5px solid #CFCFCF;
+  padding: 32px;
+}
+
+/* For laptops and desktops */
+@media only screen and (max-width: 1200px) {
+  .grid-container {
+      grid-template-columns: 400px 400px; /* 2 columns layout */
+      padding: 0px 80px; /* Adjust padding */
+  }
+}
+
+/* For tablets like iPads */
+@media only screen and (max-width: 768px) {
+  .grid-container {
+      grid-template-columns: 400px; /* 1 column layout */
+      padding: 0px 50px; /* Adjust padding */
+  }
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 480px) {
+  .grid-container {
+      grid-template-columns: 1fr; /* Full width */
+      padding: 0px 20px; /* Adjust padding */
+  }
+  .grid-item {
+      padding: 16px; /* Adjust padding for grid items */
+  }
+}
+
+  </style>
+  </head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <div class="w3-bar-item"> 
+      <h1 class="w3-text-deep-blue w3-hide-small"><img style="margin-bottom:8px" alt="company logo" src="./images/company_logo.png"/><strong> SYNEZ</strong></h1>
+      <h2 class="w3-text-deep-blue w3-hide-medium w3-hide-large w3-padding-large"><img style="margin-bottom:8px" alt="company logo" src="./images/company_logo.png"/><strong> SYNEZ</strong></h2>
+    </div>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+        <a href="./index.html" class="w3-bar-item w3-button">Home</a>
+      <a href="./aboutUs.html" class="w3-bar-item w3-button">About us</a>
+      <a href="./softwareDevelopment.html" class="w3-bar-item w3-button active"> Software Development</a>
+      <a href="./managedServices.html" class="w3-bar-item w3-button"> Managed Services</a>
+      <a href="./consulting.html" class="w3-bar-item w3-button">Consulting</a>
+      <a href="./contactUs.html" class="w3-bar-item w3-button">Contact Us</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars" style="font-size: 24px;"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="./index.html" class="w3-bar-item w3-button">Home</a>
+      <a href="./aboutUs.html" class="w3-bar-item w3-button">About us</a>
+      <a href="./softwareDevelopment.html" class="w3-bar-item w3-button active"> Software Development</a>
+      <a href="./managedServices.html" class="w3-bar-item w3-button"> Managed Services</a>
+      <a href="./consulting.html" class="w3-bar-item w3-button">Consulting</a>
+      <a href="./contactUs.html" class="w3-bar-item w3-button">Contact Us</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-text-white element " id="aboutUs">
+  <div style="position: relative; z-index:2"> 
+    <p class="w3-xxlarge w3-hide-small" style="line-height: normal; padding-top:128px"><strong>Software  <br/>development</strong></p>
+    <p class="w3-xlarge w3-hide-large w3-hide-medium" style="line-height: normal ; padding-top:64px" ><strong>Software development</strong></p>
+   
+    <p class="w3-hide-small" style="font-size: 22px;line-height: 38px;">Our proficiency lies in customized  <br>software engineering, specifically <br>designed to meet your unique <br> requirements </p>
+    <p class="w3-hide-medium  w3-hide-large" style="font-size: 18px;line-height: 38px;">Our proficiency lies in customized software engineering, specifically designed to meet your unique requirements.</p>
+  </div>
+</header>
+ 
+<!---Software engineering services-->
+    <div class="w3-container element" style="padding-bottom: 0;" >
+        <div class="w3-row-padding w3-padding-32">
+          <div class="w3-col l6 m11">
+            <h3 class="w3-xxlarge w3-hide-small">Software engineering services</h3>
+            <h3 class="w3-xlarge w3-hide-large w3-hide-medium">Software engineering services</h3>
+            <p class=" w3-hide-small" style="line-height: 36px">Synez Technology offers a skilled team for end-to-end software development services, covering backend to application, including business CRM connection, mobile app design, push notifications, security, GPS, and more, with expertise in user administration, API connectivity, cloud storage, and social network integration. <br/> <br/>Synez Technology combines pragmatism, creativity, and a design-focused approach to deliver high-end solutions within budget, leveraging expertise in maximizing value, mitigating risks, and extensive experience in distributed IT organizations, resulting in best-fit solutions with low management overhead. <br><br>We embrace change, seize opportunities, and deliver exceptional outcomes in software development through our adaptable methodology without compromising quality.</p>
+            <p class="w3-hide-large w3-hide-medium" style="line-height: 36px">Synez Technology offers a skilled team for end-to-end software development services, covering backend to application, including business CRM connection, mobile app design, push notifications, security, GPS, and more, with expertise in user administration, API connectivity, cloud storage, and social network integration. Synez Technology combines pragmatism, creativity, and a design-focused approach to deliver high-end solutions within budget, leveraging expertise in maximizing value, mitigating risks, and extensive experience in distributed IT organizations, resulting in best-fit solutions with low management overhead. We embrace change, seize opportunities, and deliver exceptional outcomes in software development through our adaptable methodology without compromising quality.</p>
+  
+          </div>
+          <div class="w3-col l5 m9 w3-padding-64" style="float: right;">
+            <img class="w3-image w3-round-small" src="./images/sd_img1.png" alt="home_img1"  style=" box-shadow: 20px -20px  #E98862" style="max-width: 100%;
+            height: auto;">
+          </div>
+        </div>
+      </div>
+      <h3 class="w3-xxlarge w3-hide-small element">Our Core competencies</h3>
+      <h3 class="w3-xlarge w3-hide-large w3-hide-medium element">Our Core competencies</h3>
+   <!-- Our Core competencies -->
+  <div class="w3-container">
+    <div class="w3-border-top"> </div>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img  src="./images/core_img1.png" class="w3-padding-32"/>
+            <h4 class="w3-text-red" style="font-size: 25px; line-height: normal;"> <b>Product Conceptualization <br> & Consulting</b></h4>
+           <p class="w3-large" style="font-size: 18px; line-height: 36px;">
+            <!-- We provide end-to-end support, validating your idea, building a prototype, adjusting the tech stack, and outlining a market-driven vision for future development. -->
+            We provide end-to-end support validating your idea, building a prototype, adjusting the tech stack, and<br> outlining a market-driven vision for future development.
+           </p>
+        </div>
+        <div class="grid-item">
+            <img  src="./images/core_img2.png" class="w3-padding-32"/>
+            <h4 class="w3-text-red" style="font-size: 25px; line-height: normal;"> <b>User Experience & User <br>Interface design</b></h4>
+           <p class="w3-large" style="font-size: 18px; line-height: 36px;">
+          <!--   We leverage extensive research on your target audience to inform our product design decisions, creating intuitive interfaces that deliver memorable experiences and a clear understanding of your offering. -->
+             We leverage extensive research on your target audience to inform our product  design decisions, creating intuitive interfaces that deliver memorable experiences and a clear understanding of your offering. 
+           </p>
+        </div>
+        <div class="grid-item">
+            <img  src="./images/core_img3.png" class="w3-padding-32"/>
+            <h4 class="w3-text-red" style="font-size: 25px; line-height: normal;"> <b>Minimum Viable Product<br> (MVP) Development</b></h4>
+           <p class="w3-large" style="font-size: 18px; line-height: 36px;">
+          <!--   With our end-to-end partnership, we transform your idea into a functional prototype. From project planning to developing a proof-of-concept, we prioritize user feedback, ensuring quality assurance while optimizing resources. -->
+          With our end-to-end partnership, we <br> transform your idea into a functional <br> prototype. From project planning to <br>developing a proof-of-concept, we prioritize user feedback, ensuring quality assurance while optimizing <br>resources. 
+           </p>
+        </div>
+    </div>
+    <div style="background-color:#f1f1f1!important; ">
+    <div class="w3-border-top"> </div>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img  src="./images/core_img4.png" class="w3-padding-32"/>
+            <h4 class="w3-text-deep-blue"> <b>Software as a Service <br>(SaaS) Development</b></h4>
+           <p class="w3-large">
+            As a leading provider of SaaS product development services, our expertise in cloud-based applications sets us apart. Whether you're a startup or an established enterprise, we're prepared to be your partner throughout the entire SaaS software development journey. From conceptualization to post-deployment maintenance, we're here to ensure your success in the ever-evolving world of cloud-based solutions.
+           </p>
+        </div>
+        <div class="grid-item">
+            <img  src="./images/core_img5.png" class="w3-padding-32"/>
+          <h4 class="w3-text-deep-blue"> <b>Software Testing and Quality Assurance</b></h4>
+         <p class="w3-large">
+          We subject your software to meticulous testing, guaranteeing the utmost security and stable performance even under regular and peak loads. Our team of experts possesses deep expertise in both manual and automated testing services. Through rigorous testing methodologies, we identify and resolve any potential vulnerabilities or performance issues, ensuring a robust and reliable software solution.
+         </p>
+        </div>
+        <div class="grid-item">
+            <img  src="./images/core_img6.png" class="w3-padding-32"/>
+            <h4 class="w3-text-deep-blue"> <b>Migration & Modernization</b></h4>
+           <p class="w3-large">
+            Our experts specialize in re-architecting on-premises solutions or seamlessly migrating existing software to different technologies, all while guaranteeing no performance drop. Rest assured, the migrated app will be seamlessly integrated with the systems supporting your established business processes, ensuring a smooth and uninterrupted workflow.
+           </p>
+        </div>
+        </div>
+    </div>
+    </div>
+ 
+  </div>
+
+
+    <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="w3-deep-blue w3-padding-32 element">
+ <!--  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a> -->
+<div class="w3-row-padding">
+ <div class="w3-quarter">
+<h1 class="w3-text-white"><img  alt="company logo icon" src="./images/company_icon.png"/><strong> SYNEZ</strong></h1>
+<p class="w3-medium" style="font-size:40px;">We offer businesses the<br> technologies they need to<br> become successful businesses <br>in today’s world.</p>
+</div>
+ <div class="w3-quarter w3-medium w3-padding-small">
+    <h4 class="w3-padding-16">Explore</h4>
+    <p><a style="text-decoration:none"  href="#home">HOME</a></p>
+    <p><a style="text-decoration:none" href="#about">ABOUT US</a></p>
+    <p><a style="text-decoration:none"  href="#softwareDev">SOFTWARE DEVELOPMENT</a></p>
+    <p><a style="text-decoration:none" href="#MngSer">MANAGED SERVICES</a></p>
+    <p><a style="text-decoration:none" href="#Consulting">CONSULTING</a></p>
+ </div>
+ <div class="w3-quarter w3-medium w3-padding-small">
+    <h4 class="w3-padding-16">Keep in touch</h4>
+    <p>Address: C56/30 Sector 62 Noida 201307,<br> Uttar Pradesh, India</p>
+    <p>Phone: +0120 3112279, +0120 3112280</p>
+    <p>Mobile: +91 9711311790, +91 7290 040506</p>
+    <p>Email: <a href="mailto:info@syneztech.com">info@syneztech.com</a></p>
+ </div>
+    <div class="w3-quarter w3-medium w3-padding-small">
+        
+        <div class="social-icon w3-half">
+            <a href="mailto:info@example.com"><i class="fa fa-envelope w3-hover-opacity"></i></a>
+          </div>
+          <div class="social-icon w3-half">
+            <a href="https://www.linkedin.com/in/yourprofile"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+          </div>
+ </div></div>
+<div class="w3-border-top"> </div>
+ <div class="w3-padding-16">Copyright © 2023. Synez Technologies</div>
+ </footer>
+
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll('.w3-bar .w3-bar-item.w3-button').forEach(function(element) {
+        element.addEventListener('click', function() {
+            // Remove 'active' class from all elements
+            document.querySelectorAll('.w3-bar .w3-bar-item.w3-button').forEach(function(el) {
+                el.classList.remove('active');
+            });
+
+            // Add 'active' class to the clicked element
+            this.classList.add('active');
+        });
+    });
+});
+</script>
+
+</body>
+</html>
