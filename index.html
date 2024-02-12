@@ -112,8 +112,8 @@
   background-repeat: no-repeat;
   background-position: center;
   height: 500px; /* Or use 100vh for full viewport height */
-  width: 100vw; /* This will cover the full width of the viewport */
- 
+  
+  width: '100%';
   z-index: 1; 
 }
 
@@ -270,9 +270,13 @@
       <a class="w3-right"  onclick="plusSlides(1)">  <img src="./images/rigth-Arrow.png" class="w3-hover-opacity w3-xxlarge" alt="Right Arrow"></a>
     </div>
     </div>
-    <div class="banner w3-padding-64 element">
-      <p class="w3-text-white w3-hide-small" style="font-size: 40px; line-height: 42px;  z-index: 10;"> <b>Increasing the level <br>of customer<br> satisfaction in every <br>management</b></p>
-      <p class="w3-text-white w3-hide-medium w3-hide-large" style="font-size: 32px; line-height: 42px;  z-index: 10;"> <b>Increasing the level <br>of customer<br> satisfaction in every <br>management</b></p>
+    <div class="banner w3-padding-64 element" style="position: relative;">
+
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.4); z-index: 9;  content: ''; display: block;  pointer-events: none;">
+      <p class="w3-text-white w3-hide-small" style="font-size: 40px; line-height: 42px;  z-index: 10; margin-top:110px;margin-left:110px"> <b>Increasing the level <br>of customer<br> satisfaction in every <br>management</b></p>
+      <p class="w3-text-white w3-hide-medium w3-hide-large" style="font-size: 32px; line-height: 42px;  z-index: 10; margin-top:32px; margin-left:16px"> <b>Increasing the level <br>of customer<br> satisfaction in every <br>management</b></p>
+    </div>
+      
     </div>
      
 <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
