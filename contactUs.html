@@ -175,6 +175,16 @@
   margin: 4px 4px 0;  /* Top margin only for spacing between label and text */
   line-height: 1.5;
 }
+  .map-container {
+    width: 100%; /* Adjust width as per your requirement */
+    height: 400px; /* Adjust height as per your requirement */
+    padding: 20px;
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none; /* Removes the default border around the iframe */
+  }
   </style>
   </head>
 <body>
@@ -291,9 +301,13 @@
         </div>
     </div>
     <div class="w3-container element">
-        <h3 class="w3-xxlarge w3-hide-small">Find us on goolge map</h3>
-        <h3 class="w3-xlarge w3-hide-large w3-hide-medium">Find us on goole map</h3>
-        <img src="./images/company_location.png" class="w3-image" style="width:100%;">
+        <h3 class="w3-xxlarge w3-hide-small">Find Us On Google Map</h3>
+        <h3 class="w3-xlarge w3-hide-large w3-hide-medium">  Find Us On Google Map</h3>
+        <div class="map-container">
+          <!-- Paste your Google Maps iframe code here -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.6385846216315!2d77.36083701508211!3d28.628223982422404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce55100000001%3A0xe6694b97a330a81!2sC56%2F30%20Sector%2062%20Noida%20201307%2C%20Uttar%20Pradesh%2C%20India!5e0!3m2!1sen!2sus!4v1582139345477!5m2!1sen!2sus" allowfullscreen=""></iframe>
+        </div>
+        
       
       </div>
     <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
