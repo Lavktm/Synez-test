@@ -28,7 +28,7 @@
     background-image: url("./images/home_bg_img1.png");
     height: auto;
     width: '100%';
-   
+    overflow: hidden;
    }
    .bgimg-1::after {
     content: ''; /* Pseudo-element content should be empty */
@@ -112,8 +112,8 @@
   background-repeat: no-repeat;
   background-position: center;
   height: 500px; /* Or use 100vh for full viewport height */
-  
-  width: '100%';
+  width: 100vw; /* This will cover the full width of the viewport */
+ 
   z-index: 1; 
 }
 
@@ -137,20 +137,36 @@
   padding: 0px 110px;
   position: relative;
   z-index:2;
+  width: '100%';
+  height: auto;
 }
+.contact-row {
+  display: flex;
+  margin-bottom: 10px;
+ 
+  align-items: center;
+}
+
+
+.contact-row p {
+ 
+  margin: 4px 4px 0;  /* Top margin only for spacing between label and text */
+  line-height: 1.5;
+}
+
 </style>
   </head>
 <body>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
+  <div class="w3-bar w3-white w3-card" id="myNavbar" >
     <div class="w3-bar-item"> 
     <h1 class="w3-text-deep-blue w3-hide-small"><img style="margin-bottom:8px" alt="company logo" src="./images/company_logo.png"/><strong> SYNEZ</strong></h1>
     <h4 class="w3-text-deep-blue w3-hide-medium w3-hide-large w3-padding-large"><img style="margin-bottom:8px" alt="company logo" src="./images/company_logo.png"/><strong> SYNEZ</strong></h2>
     </div>
     <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
+    <div class="w3-right w3-hide-small" style="z-index: 1000">
         <a href="./index.html" class="w3-bar-item w3-button active">Home</a>
       <a href="./aboutUs.html" class="w3-bar-item w3-button">About us</a>
       <a href="./softwareDevelopment.html" class="w3-bar-item w3-button"> Software Development</a>
@@ -178,13 +194,11 @@
 </nav>
 
 <!-- Header with full-height image -->
-<header class="bgimg-1 w3-text-white  w3-text-white element" id="home">
-  <div class="grid-container"> 
- 
-  <span class="w3-jumbo w3-text-light-grey w3-hide-small"><strong>WE</strong></span>
+<header class="bgimg-1 w3-text-white w3-text-white element" id="home" style="z-index:-10;">
+  <div class="grid-container" > 
+   
+  <span class="w3-jumbo w3-text-light-grey w3-hide-small" ><strong>WE</strong></span>
   <span class="w3-text-light-grey w3-hide-large w3-hide-medium" style="font-size: 96px; margin-top:96px"><strong>WE</strong></span>
-
-
   <span class="w3-xxxlarge  w3-hide-small  w3-padding-small" style="line-height:64px; margin-top:128px" ><strong>INNOVATE <br>ASSOCIATE <br>INSPIRE</strong> </span>
   <span class="w3-hide-large w3-hide-medium  w3-padding-small w3-padding-48"   style="line-height:24px; margin-top:96px"><strong>INNOVATE <br>ASSOCIATE <br>INSPIRE</strong> </span>
   </div>
@@ -209,52 +223,55 @@
         <p class="w3-padding-16"><a href="./aboutUs.html" class="w3-button w3-blue " style="min-height: 40px;border-radius:30px"> How we work</a></p>
       </div>
       <div class="w3-col m6 w3-right-align">
-        <img class="w3-image w3-round-small" src="./images/home_img1.png" alt="home_img1"  style="box-shadow: 20px -20px  #2D2F8E">
+        <img class="w3-image w3-round-small" src="./images/home_img1.png" alt="home_img1"  style=" box-shadow: 20px -20px  #2D2F8E">
       </div>
     </div>
   </div>
  
   <!---What we do-->
   <div class="w3-container element" >
-   <h3 class="w3-xxlarge w3-hide-small">What we do</h3>
-   <h3 class="w3-xlarge w3-hide-large w3-hide-medium">What we do</h3>
-   <div class="w3-row-padding w3-padding-32">
-    <div class="w3-col l4 m6" style="display: grid;grid-row-gap: 25px;">
-  <div class="w3-orange" style="padding: 16px 32px; width: 100%;min-height: 390.461px;">
-    <h2> Consultation</h2>
-    <p style="line-height: 40px">Copy
-      Empowering clients with innovative <br/>technology for digital <br> transformation success as we <br> partner together to achieve your IT <br>goals.</p>
-      <a href="./consulting.html" class="button">   <i class="fa fa-link  w3-hover-opacity"></i>   Go to consulting</a>
-  </div>
-  <img src="./images/home_img4.png" style="width: 100%" class="w3-hover-opacity" alt="Home img4">
-</div>
-<div class="w3-col l4 m6" style="display: grid;grid-row-gap: 40px;">
-  <img src="./images/home_img2.png" style="width: 100%" class="w3-hover-opacity" alt="Home img2">
-   <div class="w3-blue" style="padding: 16px 32px; width:  100%;min-height: 406.079px;">
-    <h2> Software development</h2>
-    <p style="line-height: 40px">Tailored solutions aligned with your  <br/>business culture and goals - trust us <br> to exceed your expectations <br> with proven list of satisfied clients.</p>
-      <a href="./softwareDevelopment.html" class="button">   <i class="fa fa-link  w3-hover-opacity"></i>   Go to software development</a>
-    </div>
-</div>
-<div class="w3-col l4 m6" style="display: grid;grid-row-gap: 5px;">
-  <img src="./images/home_img3.png" style="width: 100%" class="w3-hover-opacity" alt="Home img3">
-   <div class="w3-deep-blue" style="padding: 16px 32px; width:  100%;min-height: 390.461px;">
-    <h2> Managed services</h2>
-    <p style="line-height: 40px">Efficiently manage your IT needs  <br/>prioritize your core business <br> activities with our reliable and<br> secure managed IT services.</p>
-      <a href="./managedServices.html" class="button">   <i class="fa fa-link  w3-hover-opacity"></i>   Go to managed services</a>
-    </div>
-    <img src="./images/home_img5.png" style="width: 100%" class="w3-hover-opacity" alt="Home img3">
-</div>
-</div>
-</div>
-  </div>
+    <h3 class="w3-xxlarge w3-hide-small">What We do</h3>
+    <h3 class="w3-xlarge w3-hide-large w3-hide-medium">What We do</h3>
+    <div class="w3-row-padding" style="justify-content: space-between; " >
+     <div class="w3-col l4 m6" style="display: grid;grid-row-gap: 30px">
+   <div class="w3-orange" style="padding: 16px 24px; width: 100%;height: 390.461px;">
+     <h2> Consultation</h2>
+     <p style="line-height: 40px">
+       Empowering clients with innovative<br> technology for digital <br> transformation success as we <br> partner together to achieve your IT <br>goals.</p>
+       <a href="./consulting.html" class="button">   <i class="fa fa-link  w3-hover-opacity"></i>   Go to consulting</a>
+   </div>
+   <img src="./images/home_img4.png" style="width: 100%; height:505px"  class="w3-hover-opacity" alt="Home img4">
+ </div>
+ <div class="w3-col l4 m6" style="display: grid;grid-row-gap: 30px;">
+   <img src="./images/home_img2.png" style="width: 100%;height:490px" class="w3-hover-opacity" alt="Home img2">
+    <div class="w3-blue" style="padding: 16px 24px; width:  100%;height:406.079px;">
+     <h2> Software development</h2>
+     <p style="line-height: 40px">Tailored solutions aligned with your  <br/>business culture and goals - trust us <br> to exceed your expectations <br> with proven list of satisfied clients.</p>
+       <a href="./softwareDevelopment.html" class="button">   <i class="fa fa-link  w3-hover-opacity"></i>   Go to software development</a>
+     </div>
+ </div>
+ <div class="w3-col l4 m6" style="display: grid;grid-row-gap: 30px;">
+   <img src="./images/home_img3.png" style="width: 100% ; height:196px" class="w3-hover-opacity" alt="Home img3">
+    <div class="w3-deep-blue" style="padding: 16px 24px; width:  100%; height: 344px;">
+     <h2> Managed services</h2>
+     <p style="line-height: 40px">Efficiently manage your IT needs  <br/>prioritize your core business <br> activities with our reliable and<br> secure managed IT services.</p>
+       <a href="./managedServices.html" class="button">   <i class="fa fa-link  w3-hover-opacity"></i>   Go to managed services</a>
+     </div>
+     <img src="./images/home_img5.png" style="width: 100%; height: 327px;" class="w3-hover-opacity" alt="Home img3">
+ </div>
+ </div>
+ </div>
+   </div>
+
+
+
 
    <!---What client says-->
-  <h3 class="w3-xxlarge w3-hide-small element">What client says</h3>
-  <h3 class="w3-xlarge w3-hide-medium w3-hide-large element">What client says</h3>
+  <h3 class="w3-xxlarge w3-hide-small element">What  Client Says</h3>
+  <h3 class="w3-xlarge w3-hide-medium w3-hide-large element">What Client Says</h3>
     <div  class="w3-container w3-row-padding w3-light-grey element">
     <div class="w3-col s2" style="margin-top: 100px;">
-      <a onclick="plusSlides(-1)">  <img src="./images/left-Arrow.png" class="w3-hover-opacity w3-xxlarge" alt="Left Arrow"></a>
+      <a onclick="plusSlides(-1)"> <i class="fa fa-long-arrow-left w3-hover-opacity w3-xxxlarge"></i></a>
     </div>
     <div class="w3-col s8">
       <p class="w3-center" style="font-size: 29px; font-weight: 400;line-height: 40px;"> Lorem Ipsum is simply dummy text of the printing and<br/>typesetting industry. Lorem Ipsum has been the industry's<br/> standard dummy text</p>
@@ -267,16 +284,12 @@
       </div>
     </div>
      <div  class="w3-col s2" style="margin-top: 100px; ">
-      <a class="w3-right"  onclick="plusSlides(1)">  <img src="./images/rigth-Arrow.png" class="w3-hover-opacity w3-xxlarge" alt="Right Arrow"></a>
+      <a class="w3-right"  onclick="plusSlides(1)"> <i class="fa fa-long-arrow-right w3-hover-opacity w3-xxxlarge"></i></a>
     </div>
     </div>
-    <div class="banner w3-padding-64 element" style="position: relative;">
-
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.4); z-index: 9;  content: ''; display: block;  pointer-events: none;">
-      <p class="w3-text-white w3-hide-small" style="font-size: 40px; line-height: 42px;  z-index: 10; margin-top:110px;margin-left:110px"> <b>Increasing the level <br>of customer<br> satisfaction in every <br>management</b></p>
-      <p class="w3-text-white w3-hide-medium w3-hide-large" style="font-size: 32px; line-height: 42px;  z-index: 10; margin-top:32px; margin-left:16px"> <b>Increasing the level <br>of customer<br> satisfaction in every <br>management</b></p>
-    </div>
-      
+    <div class="banner w3-padding-64 element">
+      <p class="w3-text-white w3-hide-small" style="font-size: 40px; line-height: 42px;  z-index: 10;"> <b>Increasing the level <br>of customer<br> satisfaction in every <br>management</b></p>
+      <p class="w3-text-white w3-hide-medium w3-hide-large" style="font-size: 32px; line-height: 42px;  z-index: 10;"> <b>Increasing the level <br>of customer<br> satisfaction in every <br>management</b></p>
     </div>
      
 <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
@@ -289,19 +302,32 @@
 </div>
  <div class="w3-quarter w3-medium w3-padding-small">
     <h4 class="w3-padding-16">Explore</h4>
-    <p><a style="text-decoration:none"  href="./index.html">HOME</a></p>
-    <p><a style="text-decoration:none" href="./aboutUs.html">ABOUT US</a></p>
-    <p><a style="text-decoration:none"  href="./softwareDevelopment.html">SOFTWARE DEVELOPMENT</a></p>
-    <p><a style="text-decoration:none" href="./managedServices.html">MANAGED SERVICES</a></p>
-    <p><a style="text-decoration:none" href="./consulting.html">CONSULTING</a></p>
+    <p><a style="text-decoration:none"  href="#home">HOME</a></p>
+    <p><a style="text-decoration:none" href="#about">ABOUT US</a></p>
+    <p><a style="text-decoration:none"  href="#softwareDev">SOFTWARE DEVELOPMENT</a></p>
+    <p><a style="text-decoration:none" href="#MngSer">MANAGED SERVICES</a></p>
+    <p><a style="text-decoration:none" href="#Consulting">CONSULTING</a></p>
  </div>
  <div class="w3-quarter w3-medium w3-padding-small">
-    <h4 class="w3-padding-16">Keep in touch</h4>
-    <p>Address: C56/30 Sector 62 Noida 201307,<br> Uttar Pradesh, India</p>
-    <p>Phone: +0120 3112279, +0120 3112280</p>
-    <p>Mobile: +91 9711311790, +91 7290 040506</p>
-    <p>Email: <a href="mailto:info@syneztech.com">info@syneztech.com</a></p>
- </div>
+  <h4 class="w3-padding-16">Keep in touch</h4>
+
+  <div class="contact-row">
+    Address:
+    <p>C56/30 Sector 62 Noida 201307, Uttar Pradesh, India</p>
+  </div>
+  <div class="contact-row">
+  Phone:
+    <p>+0120 3112279, +0120 3112280</p>
+  </div>
+  <div class="contact-row">
+   Mobile:
+    <p>+91 7290 040506</p>
+  </div>
+  <div class="contact-row">
+  Email:
+    <p><a href="mailto:info@synzetech.com">info@synzetech.com</a></p>
+  </div>
+  </div>
     <div class="w3-quarter w3-medium w3-padding-small">
         
         <div class="social-icon w3-half">

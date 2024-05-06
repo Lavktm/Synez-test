@@ -175,7 +175,19 @@
       padding: 16px; /* Adjust padding for grid items */
   }
 }
+.contact-row {
+  display: flex;
+  margin-bottom: 10px;
+ 
+  align-items: center;
+}
 
+
+.contact-row p {
+ 
+  margin: 4px 4px 0;  /* Top margin only for spacing between label and text */
+  line-height: 1.5;
+}
   </style>
   </head>
 <body>
@@ -216,7 +228,7 @@
 </nav>
 
 <!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-text-white element " id="aboutUs">
+<header class="bgimg-1 w3-display-container w3-text-white element " id="aboutUs" style="z-index:-10;">
   <div style="position: relative; z-index:2"> 
     <p class="w3-xxlarge w3-hide-small" style="line-height: normal; padding-top:128px"><strong>Software  <br/>development</strong></p>
     <p class="w3-xlarge w3-hide-large w3-hide-medium" style="line-height: normal ; padding-top:64px" ><strong>Software development</strong></p>
@@ -230,20 +242,20 @@
     <div class="w3-container element" style="padding-bottom: 0;" >
         <div class="w3-row-padding w3-padding-32">
           <div class="w3-col l6 m11">
-            <h3 class="w3-xxlarge w3-hide-small">Software engineering services</h3>
-            <h3 class="w3-xlarge w3-hide-large w3-hide-medium">Software engineering services</h3>
+            <h3 class="w3-xxlarge w3-hide-small">Software Engineering services</h3>
+            <h3 class="w3-xlarge w3-hide-large w3-hide-medium">Software Engineering services</h3>
             <p class=" w3-hide-small" style="line-height: 36px">Synez Technology offers a skilled team for end-to-end software development services, covering backend to application, including business CRM connection, mobile app design, push notifications, security, GPS, and more, with expertise in user administration, API connectivity, cloud storage, and social network integration. <br/> <br/>Synez Technology combines pragmatism, creativity, and a design-focused approach to deliver high-end solutions within budget, leveraging expertise in maximizing value, mitigating risks, and extensive experience in distributed IT organizations, resulting in best-fit solutions with low management overhead. <br><br>We embrace change, seize opportunities, and deliver exceptional outcomes in software development through our adaptable methodology without compromising quality.</p>
             <p class="w3-hide-large w3-hide-medium" style="line-height: 36px">Synez Technology offers a skilled team for end-to-end software development services, covering backend to application, including business CRM connection, mobile app design, push notifications, security, GPS, and more, with expertise in user administration, API connectivity, cloud storage, and social network integration. Synez Technology combines pragmatism, creativity, and a design-focused approach to deliver high-end solutions within budget, leveraging expertise in maximizing value, mitigating risks, and extensive experience in distributed IT organizations, resulting in best-fit solutions with low management overhead. We embrace change, seize opportunities, and deliver exceptional outcomes in software development through our adaptable methodology without compromising quality.</p>
   
           </div>
           <div class="w3-col l5 m9 w3-padding-64" style="float: right;">
-            <img class="w3-image w3-round-small" src="./images/SD_img1.png" alt="SD_img1"  style=" box-shadow: 20px -20px  #E98862" style="max-width: 100%;
+            <img class="w3-image w3-round-small" src="./images/sd_img1.png" alt="home_img1"  style=" box-shadow: 20px -20px  #E98862" style="max-width: 100%;
             height: auto;">
           </div>
         </div>
       </div>
-      <h3 class="w3-xxlarge w3-hide-small element">Our Core Competencies</h3>
-      <h3 class="w3-xlarge w3-hide-large w3-hide-medium element">Our Core Competencies</h3>
+      <h3 class="w3-xxlarge w3-hide-small element">Our Core competencies</h3>
+      <h3 class="w3-xlarge w3-hide-large w3-hide-medium element">Our Core competencies</h3>
    <!-- Our Core competencies -->
   <div class="w3-container">
     <div class="w3-border-top"> </div>
@@ -314,18 +326,30 @@
 </div>
  <div class="w3-quarter w3-medium w3-padding-small">
     <h4 class="w3-padding-16">Explore</h4>
-    <p><a style="text-decoration:none"  href="./index.html">HOME</a></p>
-    <p><a style="text-decoration:none" href="./aboutUs.html">ABOUT US</a></p>
-    <p><a style="text-decoration:none"  href="./softwareDevelopment.html">SOFTWARE DEVELOPMENT</a></p>
-    <p><a style="text-decoration:none" href="./managedServices.html">MANAGED SERVICES</a></p>
-    <p><a style="text-decoration:none" href="./consulting.html">CONSULTING</a></p>
+    <p><a style="text-decoration:none"  href="#home">HOME</a></p>
+    <p><a style="text-decoration:none" href="#about">ABOUT US</a></p>
+    <p><a style="text-decoration:none"  href="#softwareDev">SOFTWARE DEVELOPMENT</a></p>
+    <p><a style="text-decoration:none" href="#MngSer">MANAGED SERVICES</a></p>
+    <p><a style="text-decoration:none" href="#Consulting">CONSULTING</a></p>
  </div>
  <div class="w3-quarter w3-medium w3-padding-small">
     <h4 class="w3-padding-16">Keep in touch</h4>
-    <p>Address: C56/30 Sector 62 Noida 201307,<br> Uttar Pradesh, India</p>
-    <p>Phone: +0120 3112279, +0120 3112280</p>
-    <p>Mobile: +91 9711311790, +91 7290 040506</p>
-    <p>Email: <a href="mailto:info@syneztech.com">info@syneztech.com</a></p>
+    <div class="contact-row">
+      Address:
+      <p>C56/30 Sector 62 Noida 201307, Uttar Pradesh, India</p>
+    </div>
+    <div class="contact-row">
+    Phone:
+      <p>+0120 3112279, +0120 3112280</p>
+    </div>
+    <div class="contact-row">
+     Mobile:
+      <p>+91 7290 040506</p>
+    </div>
+    <div class="contact-row">
+    Email:
+      <p><a href="mailto:info@synzetech.com">info@synzetech.com</a></p>
+    </div>
  </div>
     <div class="w3-quarter w3-medium w3-padding-small">
         

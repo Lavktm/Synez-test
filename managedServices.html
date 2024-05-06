@@ -126,7 +126,7 @@
 }
 
 /* Media query for laptop screens (1024px and above) */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1400px) {
   .element {
     padding: 32px 110px;
   }
@@ -175,7 +175,19 @@
       padding: 16px; /* Adjust padding for grid items */
   }
 }
+.contact-row {
+  display: flex;
+  margin-bottom: 10px;
+ 
+  align-items: center;
+}
 
+
+.contact-row p {
+ 
+  margin: 4px 4px 0;  /* Top margin only for spacing between label and text */
+  line-height: 1.5;
+}
   </style>
   </head>
 <body>
@@ -216,7 +228,7 @@
 </nav>
 
 <!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-text-white element " id="aboutUs">
+<header class="bgimg-1 w3-display-container w3-text-white element " id="aboutUs" style="z-index:-10;">
   <div style="position: relative; z-index:2"> 
     <p class="w3-xxlarge w3-hide-small" style="line-height: normal; padding-top:128px"><strong>Managed <br/>Services</strong></p>
     <p class="w3-xlarge w3-hide-large w3-hide-medium" style="line-height: normal ; padding-top:64px" ><strong>Managed Services</strong></p>
@@ -230,8 +242,8 @@
     <div class="w3-container element" style="padding-bottom: 0;" >
         <div class="w3-row-padding w3-padding-32">
           <div class="w3-col l6 m11">
-            <h3 class="w3-xxlarge w3-hide-small">Software engineering services</h3>
-            <h3 class="w3-xlarge w3-hide-large w3-hide-medium">Our Managed Solutions</h3>
+            <h3 class="w3-xxlarge w3-hide-small">Software Engineering Services</h3>
+            <h3 class="w3-xlarge w3-hide-large w3-hide-medium">Software Engineering Services</h3>
             <p class=" w3-hide-small" style="line-height: 36px">We provide adaptable managed services tailored to meet our customers' specific requirements, whether for long-term retention or shorter project-based engagements like client portal content migration initiatives. Our comprehensive solution encompasses a range of essential functions, including help desk, service desk, account management, asset management, remote controls, and advanced reporting, all within a secure multi-tenant architecture. By seamlessly integrating with our clients' internal teams, we offer the necessary skills, training, tools, and process integration to facilitate a smooth transition, while our adaptability ensures scalable and agile managed services.</p>
             <p class="w3-hide-large w3-hide-medium" style="line-height: 36px">We provide adaptable managed services tailored to meet our customers' specific requirements, whether for long-term retention or shorter project-based engagements like client portal content migration initiatives. Our comprehensive solution encompasses a range of essential functions, including help desk, service desk, account management, asset management, remote controls, and advanced reporting, all within a secure multi-tenant architecture. By seamlessly integrating with our clients' internal teams, we offer the necessary skills, training, tools, and process integration to facilitate a smooth transition, while our adaptability ensures scalable and agile managed services.</p>
   
@@ -245,10 +257,10 @@
       
    <!-- Our Core competencies -->
   <div class="w3-container element">
-    <h3 class="w3-xxlarge w3-hide-small">How We Safeguard Your Enterprise And Customers</h3>
-      <h3 class="w3-xlarge w3-hide-large w3-hide-medium">How We Safeguard Your Enterprise And Customers</h3>
+    <h3 class="w3-xxlarge w3-hide-small">How we Safeguard Your Enterprise and Customers</h3>
+      <h3 class="w3-xlarge w3-hide-large w3-hide-medium">How we Safeguard Your Enterprise and Customers</h3>
       <p style="font-size: 22px;line-height: normal;"> Our exceptional Managed Security solutions are easy to implement and oversee, consistently achieving high success rates in thwarting contemporary cyber threats.</p>
-      <div class="w3-row-padding" style="margin-top:32px">
+      <div class="w3-row-padding" style="margin-top:32px;padding:0">
         <div class="w3-col l3 m6">
           <div class="w3-card w3-orange" style="padding: 16px 32px; min-height:339px">
             <img  src="./images/safe_img1.png" class="w3-padding-32"/>
@@ -388,18 +400,30 @@
 </div>
  <div class="w3-quarter w3-medium w3-padding-small">
     <h4 class="w3-padding-16">Explore</h4>
-    <p><a style="text-decoration:none"  href="./index.html">HOME</a></p>
-    <p><a style="text-decoration:none" href="./aboutUs.html">ABOUT US</a></p>
-    <p><a style="text-decoration:none"  href="./softwareDevelopment.html">SOFTWARE DEVELOPMENT</a></p>
-    <p><a style="text-decoration:none" href="./managedServices.html">MANAGED SERVICES</a></p>
-    <p><a style="text-decoration:none" href="./consulting.html">CONSULTING</a></p>
+    <p><a style="text-decoration:none"  href="#home">HOME</a></p>
+    <p><a style="text-decoration:none" href="#about">ABOUT US</a></p>
+    <p><a style="text-decoration:none"  href="#softwareDev">SOFTWARE DEVELOPMENT</a></p>
+    <p><a style="text-decoration:none" href="#MngSer">MANAGED SERVICES</a></p>
+    <p><a style="text-decoration:none" href="#Consulting">CONSULTING</a></p>
  </div>
  <div class="w3-quarter w3-medium w3-padding-small">
     <h4 class="w3-padding-16">Keep in touch</h4>
-    <p>Address: C56/30 Sector 62 Noida 201307,<br> Uttar Pradesh, India</p>
-    <p>Phone: +0120 3112279, +0120 3112280</p>
-    <p>Mobile: +91 9711311790, +91 7290 040506</p>
-    <p>Email: <a href="mailto:info@syneztech.com">info@syneztech.com</a></p>
+    <div class="contact-row">
+      Address:
+      <p>C56/30 Sector 62 Noida 201307, Uttar Pradesh, India</p>
+    </div>
+    <div class="contact-row">
+    Phone:
+      <p>+0120 3112279, +0120 3112280</p>
+    </div>
+    <div class="contact-row">
+     Mobile:
+      <p>+91 7290 040506</p>
+    </div>
+    <div class="contact-row">
+    Email:
+      <p><a href="mailto:info@synzetech.com">info@synzetech.com</a></p>
+    </div>
  </div>
     <div class="w3-quarter w3-medium w3-padding-small">
         

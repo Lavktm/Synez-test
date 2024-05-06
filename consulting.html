@@ -199,6 +199,19 @@
     background: rgba(0, 176, 224, 0.60);
     border-radius: 10px; /* Adjust the border radius as needed */
 }
+.contact-row {
+  display: flex;
+  margin-bottom: 10px;
+ 
+  align-items: center;
+}
+
+
+.contact-row p {
+ 
+  margin: 4px 4px 0;  /* Top margin only for spacing between label and text */
+  line-height: 1.5;
+}
   </style>
   </head>
 <body>
@@ -239,7 +252,7 @@
 </nav>
 
 <!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-text-white element" >
+<header class="bgimg-1 w3-display-container w3-text-white element" style="z-index:-10;" >
   <div style="position: relative; z-index:2"> 
     <p class="w3-xxlarge w3-hide-small" style="line-height: normal; padding-top:128px"><strong>IT CONSULTING</strong></p>
     <p class="w3-xlarge w3-hide-large w3-hide-medium" style="line-height: normal ; padding-top:64px" ><strong>IT CONSULTING</strong></p>
@@ -257,7 +270,7 @@
             <h3 class="w3-xlarge w3-hide-large w3-hide-medium">Consulting</h3>
             <p  style="line-height: 36px">We understand the critical role that technology plays in today's business landscape, and we are committed to helping you harness its full potential.<br><br>
                 With our expertise and in-depth knowledge of the latest industry trends, we offer strategic guidance and tailored solutions that align with your unique business objectives. Whether you are looking to optimize your existing I.T. infrastructure, implement new systems, or navigate digital transformation, our consulting services are geared towards enhancing your company's performance, scalability, and competitiveness.<br><br>
-                Partnering with us means gaining a trusted advisor who is dedicated to your success. </p>
+                Partnering with us means gaining a trusted advisor who is dedicated to your success. We not only deliver</p>
         </div>
           <div class="w3-col l5 m9 w3-padding-64" style="float: right;">
             <img class="w3-image w3-round-small" src="./images/consulting_img1.png" alt="home_img1"  style=" box-shadow: 20px -20px #E98862" style="max-width: 100%;
@@ -270,7 +283,7 @@
    <div class="grid-container">
     <div class="grid-item">
         <div class="w3-card w3-deep-blue" style="padding:32px 32px; height:323px">
-            <h4> <b>Assess and Design</b></h4>
+            <h4> <b>Assess and design</b></h4>
            <p class="w3-large">
             We analyze your current state, identify potential risks, and create a robust resilience plan to ensure the recovery and smooth resumption of your critical business services.
            </p>
@@ -299,7 +312,7 @@
 <div class="grid-container">
     <div class="grid-item">
         <div class="w3-card w3-blue" style="padding:32px 32px; height:323px">
-            <h4> <b>Manage and Sustain</b></h4>
+            <h4> <b>Manage and sustain</b></h4>
            <p class="w3-large">
             Leverage program management services to establish and maintain a resilient environment while continuously monitoring and ensuring readiness for resiliency.
            </p>
@@ -321,18 +334,30 @@
 </div>
  <div class="w3-quarter w3-medium w3-padding-small">
     <h4 class="w3-padding-16">Explore</h4>
-    <p><a style="text-decoration:none"  href="./index.html">HOME</a></p>
-    <p><a style="text-decoration:none" href="./aboutUs.html">ABOUT US</a></p>
-    <p><a style="text-decoration:none"  href="./softwareDevelopment.html">SOFTWARE DEVELOPMENT</a></p>
-    <p><a style="text-decoration:none" href="./managedServices.html">MANAGED SERVICES</a></p>
-    <p><a style="text-decoration:none" href="./consulting.html">CONSULTING</a></p>
+    <p><a style="text-decoration:none"  href="#home">HOME</a></p>
+    <p><a style="text-decoration:none" href="#about">ABOUT US</a></p>
+    <p><a style="text-decoration:none"  href="#softwareDev">SOFTWARE DEVELOPMENT</a></p>
+    <p><a style="text-decoration:none" href="#MngSer">MANAGED SERVICES</a></p>
+    <p><a style="text-decoration:none" href="#Consulting">CONSULTING</a></p>
  </div>
  <div class="w3-quarter w3-medium w3-padding-small">
     <h4 class="w3-padding-16">Keep in touch</h4>
-    <p>Address: C56/30 Sector 62 Noida 201307,<br> Uttar Pradesh, India</p>
-    <p>Phone: +0120 3112279, +0120 3112280</p>
-    <p>Mobile: +91 9711311790, +91 7290 040506</p>
-    <p>Email: <a href="mailto:info@syneztech.com">info@syneztech.com</a></p>
+    <div class="contact-row">
+      Address:
+      <p>C56/30 Sector 62 Noida 201307, Uttar Pradesh, India</p>
+    </div>
+    <div class="contact-row">
+    Phone:
+      <p>+0120 3112279, +0120 3112280</p>
+    </div>
+    <div class="contact-row">
+     Mobile:
+      <p>+91 7290 040506</p>
+    </div>
+    <div class="contact-row">
+    Email:
+      <p><a href="mailto:info@synzetech.com">info@synzetech.com</a></p>
+    </div>
  </div>
     <div class="w3-quarter w3-medium w3-padding-small">
         
