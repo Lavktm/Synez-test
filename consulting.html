@@ -192,27 +192,35 @@
 .image-container::after {
     content: '';
     position: absolute;
+    display: block;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 176, 224, 0.60);
+    background: rgba(0, 175, 224, 0.3);
     border-radius: 10px; /* Adjust the border radius as needed */
+    pointer-events: none;
+   
 }
-.contact-row {
-  display: flex;
-  margin-bottom: 10px;
- 
-  align-items: center;
+.image-container2 {
+    position: relative;
+    display: inline-block;
+}
+.image-container2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(255, 137, 0, 0.2);
+    border-radius: 10px; /* Adjust the border radius as needed */
+    pointer-events: none;
+    
 }
 
-
-.contact-row p {
- 
-  margin: 4px 4px 0;  /* Top margin only for spacing between label and text */
-  line-height: 1.5;
-}
-  </style>
+</style>
   </head>
 <body>
 
@@ -230,7 +238,7 @@
       <a href="./softwareDevelopment.html" class="w3-bar-item w3-button "> Software Development</a>
       <a href="./managedServices.html" class="w3-bar-item w3-button"> Managed Services</a>
       <a href="./consulting.html" class="w3-bar-item w3-button active">Consulting</a>
-      <a href="./contactUs.html" class="w3-bar-item w3-button">Contact Us</a>
+      <a href="./contactUs.html" class="w3-bar-item w3-button w3-button-contact">Contact Us</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -248,7 +256,7 @@
       <a href="./softwareDevelopment.html" class="w3-bar-item w3-button"> Software Development</a>
       <a href="./managedServices.html" class="w3-bar-item w3-button"> Managed Services</a>
       <a href="./consulting.html" class="w3-bar-item w3-button">Consulting</a>
-      <a href="./contactUs.html" class="w3-bar-item w3-button">Contact Us</a>
+      <a href="./contactUs.html" class="w3-bar-item w3-button ">Contact Us</a>
 </nav>
 
 <!-- Header with full-height image -->
@@ -268,7 +276,7 @@
           <div class="w3-col l6 m11">
             <h3 class="w3-xxlarge w3-hide-small">Consulting</h3>
             <h3 class="w3-xlarge w3-hide-large w3-hide-medium">Consulting</h3>
-            <p  style="line-height: 36px">We understand the critical role that technology plays in today's business landscape, and we are committed to helping you harness its full potential.<br><br>
+            <p  style="line-height: 36px ;font-weight:normal">We understand the critical role that technology plays in today's business landscape, and we are committed to helping you harness its full potential.<br><br>
                 With our expertise and in-depth knowledge of the latest industry trends, we offer strategic guidance and tailored solutions that align with your unique business objectives. Whether you are looking to optimize your existing I.T. infrastructure, implement new systems, or navigate digital transformation, our consulting services are geared towards enhancing your company's performance, scalability, and competitiveness.<br><br>
                 Partnering with us means gaining a trusted advisor who is dedicated to your success. We not only deliver</p>
         </div>
@@ -283,25 +291,29 @@
    <div class="grid-container">
     <div class="grid-item">
         <div class="w3-card w3-deep-blue" style="padding:32px 32px; height:323px">
-            <h4> <b>Assess and design</b></h4>
+            <h4> <b>Assess And Design</b></h4>
            <p class="w3-large">
             We analyze your current state, identify potential risks, and create a robust resilience plan to ensure the recovery and smooth resumption of your critical business services.
            </p>
            </div>
      </div>
      <div class="grid-item">
+      <div class="image-container">
         <img class="w3-image w3-round-small" src="./images/consulting_img2.png" alt="consulting_img3"  
           style="height:323px">
+            </div>
      </div>
    
 </div>
 <div class="grid-container-1">
     <div class="grid-item">
+      <div class="image-container2">
         <img class="w3-image w3-round-small" src="./images/consulting_img3.png" alt="consulting_img3"  
           style="height:323px">
+          </div>
      </div>
     <div class="grid-item">
-        <div class="w3-card w3-orange" style="padding:32px 32px; height:323px">
+        <div class="w3-card" style="padding:32px 32px; height:323px ;background-color: #FF8900;color: #fff;">
             <h4> <b>Implement And Test</b></h4>
            <p class="w3-large">
             Thoroughly validate your resiliency program, plans, processes, and procedures to identify any gaps or vulnerabilities that require attention prior to potential disruptive events.
@@ -312,15 +324,17 @@
 <div class="grid-container">
     <div class="grid-item">
         <div class="w3-card w3-blue" style="padding:32px 32px; height:323px">
-            <h4> <b>Manage and sustain</b></h4>
+            <h4> <b>Manage And Sustain</b></h4>
            <p class="w3-large">
             Leverage program management services to establish and maintain a resilient environment while continuously monitoring and ensuring readiness for resiliency.
            </p>
            </div>
      </div>
      <div class="grid-item">
+      <div class="image-container">
         <img class="w3-image w3-round-small" src="./images/consulting_img4.png" alt="consulting_img4"  
           style="height:323px">
+          </div>
      </div>
 </div>
 </div>
@@ -341,33 +355,45 @@
     <p><a style="text-decoration:none" href="#Consulting">CONSULTING</a></p>
  </div>
  <div class="w3-quarter w3-medium w3-padding-small">
-    <h4 class="w3-padding-16">Keep in touch</h4>
-    <div class="contact-row">
+  <h4 class="w3-padding-16">Keep in touch</h4>
+  <ul class="w3-ul" style="display: grid;">
+    <li style="display: flex;align-items: flex-start; ">
       Address:
-      <p>C56/30 Sector 62 Noida 201307, Uttar Pradesh, India</p>
-    </div>
-    <div class="contact-row">
-    Phone:
-      <p>+0120 3112279, +0120 3112280</p>
-    </div>
-    <div class="contact-row">
-     Mobile:
-      <p>+91 7290 040506</p>
-    </div>
-    <div class="contact-row">
-    Email:
-      <p><a href="mailto:info@synzetech.com">info@synzetech.com</a></p>
-    </div>
- </div>
+        <div  style="margin-left: 12px;">
+          <p style="margin: 0;"> C56/30 Sector 62 Noida 201307,</p>
+        <p style="margin: 0;">Uttar Pradesh, India</p>
+        </div>
+    </li> 
+    <li style="display: flex;align-items: flex-start; ">
+      Phone:
+        <div  style="margin-left: 12px;">
+          <p style="margin: 0;">+120 3112279, +120 3112280</p>
+        </div>
+    </li> 
+    <li style="display: flex;align-items: flex-start; ">
+      Mobile:
+        <div  style="margin-left: 12px;">
+          <p style="margin: 0;">+91 7290 040506</p>
+        </div>
+    </li> 
+    <li style="display: flex;align-items: flex-start; ">
+      Email:
+        <div  style="margin-left: 12px;">
+          <a href="mailto:info@synzetech.com">info@synzetech.com</a>
+        </div>
+    </li> 
+</ul>
+</div>
     <div class="w3-quarter w3-medium w3-padding-small">
         
         <div class="social-icon w3-half">
-            <a href="mailto:info@example.com"><i class="fa fa-envelope w3-hover-opacity"></i></a>
+            <a href="mailto:info@syneztech.com"><i class="fa fa-envelope w3-hover-opacity"></i></a>
           </div>
           <div class="social-icon w3-half">
-            <a href="https://www.linkedin.com/in/yourprofile"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/company/synez-tech/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
           </div>
- </div></div>
+         </div>
+</div>
 <div class="w3-border-top"> </div>
  <div class="w3-padding-16">Copyright © 2023. Synez Technologies</div>
  </footer>

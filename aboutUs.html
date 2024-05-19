@@ -26,8 +26,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-image: url("./images/about_us_bg_img1.png");
-    height: auto;
+    height: 700px;
     width: '100%';
+    overflow: hidden;
     }
     .bgimg-1::after {
       content: ''; /* Pseudo-element content should be empty */
@@ -193,21 +194,7 @@
       grid-template-rows: auto 1fr;
   }
 }
-.contact-row {
-  display: flex;
-  margin-bottom: 10px;
- 
-  align-items: center;
-}
-
-
-.contact-row p {
- 
-  margin: 4px 4px 0;  /* Top margin only for spacing between label and text */
-  line-height: 1.5;
-}
-
-  </style>
+</style>
   </head>
 <body>
 
@@ -225,7 +212,7 @@
       <a href="./softwareDevelopment.html" class="w3-bar-item w3-button"> Software Development</a>
       <a href="./managedServices.html" class="w3-bar-item w3-button"> Managed Services</a>
       <a href="./consulting.html" class="w3-bar-item w3-button">Consulting</a>
-      <a href="./contactUs.html" class="w3-bar-item w3-button">Contact Us</a>
+      <a href="./contactUs.html" class="w3-bar-item w3-button w3-button-contact">Contact Us</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -260,7 +247,7 @@
   <div class="w3-container element_1" >
     <div class="w3-row-padding" style="justify-content: center;">
        
-          <div class="w3-col m2">
+          <div class="w3-col m3">
          <img src="./images/about_us_img1.png" alt="about_us_img1" style="height: 610px; width:100%"/>
         </div> 
         <div class="w3-col m2" style="display: grid;grid-row-gap: 20px">
@@ -269,7 +256,7 @@
            </div>
      
 
-      <div class="w3-col m7" style="display: grid;grid-row-gap: 20px ;margin:0; padding:0; margin-left :20px; margin-top:-16px">
+      <div class="w3-col m6" style="display: grid;grid-row-gap: 20px ;margin:0; padding:0; margin-left :20px; margin-top:-16px">
         <h3 class="w3-hide-small w3-xlarge"  style="margin:0">What best describe us</h3>
         <h3 class="w3-xlarge w3-hide-large w3-hide-medium" style="margin:0">What best describe us</h3>
         <p class="w3-hide-small w3-hide-medium" style="line-height: 36px; margin-top: 0px; margin:0; width:100%">We empowers businesses with tailored IT solutions, emphasizing effective  communication, customized support, and uncompromising quality. Our experienced and dedicated team is driven to overcome challenges, achieve success, and  establish market dominance through contracts with businesses and governments.</p>
@@ -278,28 +265,28 @@
             <li style="display: flex;align-items: center; ">
                 <img alt="" src="./images/describe_img1.png" />
                 <div  style="margin-left: 32px;">
-                <h4 style="margin: 0;">Assured Services</h4>
+                <h4 style="margin: 0; font-weight: 700;">Assured Services</h4>
                 <p style="margin: 0;"> We are always at the top in terms of client satisfaction.</p>
                 </div>
             </li> 
-            <li style="display: flex;align-items: center; ">
+            <li style="display:flex;align-items:center; ">
                 <img alt="" src="./images/describe_img2.png" />
-                <div style="margin-left: 32px;">
-                <h4 style="margin: 0;"> Worldwide Clients</h4>
+                <div style="margin-left: 28px;">
+                <h4 style="margin: 0; font-weight: 700;"> Worldwide Clients</h4>
                 <p style="margin: 0;">  We are trusted by 20+ clients from worldwide.</p>
                 </div>
             </li> 
             <li style="display: flex;align-items: center; ">
                 <img alt="" src="./images/describe_img3.png" />
-                <div style="margin-left: 32px;">
-                <h4 style="margin: 0;"> Tech Innovator </h4>
+                <div style="margin-left: 28px;">
+                <h4 style="margin: 0; font-weight: 700;"> Tech Innovator </h4>
                 <p style="margin: 0;">  Lifetime provider of uttermost tactics for your digital journey.</p>
                 </div>
             </li> 
             <li style="display: flex;align-items: center; ">
                 <img alt="" src="./images/describe_img4.png" />
-                <div style="margin-left: 32px;">
-                <h4 style="margin: 0;">   Tech centric  </h4>
+                <div style="margin-left: 28px;">
+                <h4 style="margin: 0; font-weight: 700;">   Tech centric  </h4>
                 <p style="margin: 0;">  24*7 support from our expertise to your business.</p>
                 </div>
             </li> 
@@ -315,40 +302,43 @@
    <h3 class="w3-xlarge w3-hide-large w3-hide-medium">Our Values</h3>
    <div class="w3-row-padding w3-padding-32">
     <div class="w3-col l3 m6">
-        <div class="w3-card w3-aqua w3-text-white" style="padding: 16px 16px; min-height:379px">
+        <div class="w3-card w3-aqua w3-text-white" style="padding: 16px 32px; min-height:500px">
             <img  src="./images/value_img1.png" class="w3-padding-32"/>
            <p>
-            <h4 > <b>Transparency</b></h4>
+            <h4  style="font-size:24px;"> <b>Transparency</b></h4>
+            <p style="font-size:24px;" >
            Maintaining utmost clarity throughout our process is key to delivering
               premium-quality results.
            </p>
            </div>
     </div>
     <div class="w3-col l3 m6">
-        <div class="w3-card w3-deep-blue" style="padding:16px 16px; min-height:379px">
+        <div class="w3-card w3-deep-blue" style="padding:16px 32px; min-height:500px">
           <img  src="./images/value_img2.png" class="w3-padding-32"/>
-         <p>
-          <h4 > <b>Innovation</b></h4>
+       
+          <h4 style="font-size:24px;" > <b>Innovation</b></h4>
+          <p style="font-size:24px;" >
           We leverage cutting-edge technologies to pioneer futuristic solutions,
           transforming your ideas into tangible reality.
          </p>
          </div>
     </div>
     <div class="w3-col l3 m6">
-        <div class="w3-card w3-aqua" style="padding: 16px 16px; min-height:379px">
+        <div class="w3-card w3-aqua" style="padding: 16px 32px;min-height:500px">
           <img  src="./images/value_img3.png" class="w3-padding-32"/>
-         <p>
-          <h4 > <b>Collaboration</b></h4>
-          Our collaborative approach, uniting technology experts and business
+          <h4 style="font-size:24px;"> <b>Collaboration</b></h4>
+         <p style="font-size:24px;" >
+         Our collaborative approach, uniting technology experts and business
           teams, ensures we meet your goals.
          </p>
          </div>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
-            <div class="w3-card w3-deep-blue" style="padding: 16px 16px; min-height:379px">
+            <div class="w3-card w3-deep-blue" style="padding: 16px 32px; min-height:500px">
               <img  src="./images/value_img4.png" class="w3-padding-32"/>
-             <p>
-              <h4 > <b>Expertise</b></h4>
+           
+              <h4  style="font-size:24px;" > <b>Expertise</b></h4>
+              <p style="font-size:24px;" >
               With a seamless integration of expertise and innovation, we develop
               and design your digital products to perfection.
              </p>
@@ -418,33 +408,45 @@
     <p><a style="text-decoration:none" href="#Consulting">CONSULTING</a></p>
  </div>
  <div class="w3-quarter w3-medium w3-padding-small">
-    <h4 class="w3-padding-16">Keep in touch</h4>
-    <div class="contact-row">
+  <h4 class="w3-padding-16">Keep in touch</h4>
+  <ul class="w3-ul" style="display: grid;">
+    <li style="display: flex;align-items: flex-start; ">
       Address:
-      <p>C56/30 Sector 62 Noida 201307, Uttar Pradesh, India</p>
-    </div>
-    <div class="contact-row">
-    Phone:
-      <p>+0120 3112279, +0120 3112280</p>
-    </div>
-    <div class="contact-row">
-     Mobile:
-      <p>+91 7290 040506</p>
-    </div>
-    <div class="contact-row">
-    Email:
-      <p><a href="mailto:info@synzetech.com">info@synzetech.com</a></p>
-    </div>
- </div>
+        <div  style="margin-left: 12px;">
+          <p style="margin: 0;"> C56/30 Sector 62 Noida 201307,</p>
+        <p style="margin: 0;">Uttar Pradesh, India</p>
+        </div>
+    </li> 
+    <li style="display: flex;align-items: flex-start; ">
+      Phone:
+        <div  style="margin-left: 12px;">
+          <p style="margin: 0;">+120 3112279, +120 3112280</p>
+        </div>
+    </li> 
+    <li style="display: flex;align-items: flex-start; ">
+      Mobile:
+        <div  style="margin-left: 12px;">
+          <p style="margin: 0;">+91 7290 040506</p>
+        </div>
+    </li> 
+    <li style="display: flex;align-items: flex-start; ">
+      Email:
+        <div  style="margin-left: 12px;">
+          <a href="mailto:info@synzetech.com">info@synzetech.com</a>
+        </div>
+    </li> 
+</ul>
+</div>
     <div class="w3-quarter w3-medium w3-padding-small">
         
         <div class="social-icon w3-half">
-            <a href="mailto:info@example.com"><i class="fa fa-envelope w3-hover-opacity"></i></a>
+            <a href="mailto:info@syneztech.com"><i class="fa fa-envelope w3-hover-opacity"></i></a>
           </div>
           <div class="social-icon w3-half">
-            <a href="https://www.linkedin.com/in/yourprofile"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/company/synez-tech/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
           </div>
- </div></div>
+         </div>
+</div>
 <div class="w3-border-top"> </div>
  <div class="w3-padding-16">Copyright © 2023. Synez Technologies</div>
  </footer>

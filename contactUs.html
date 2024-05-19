@@ -162,20 +162,10 @@
     background: rgba(0, 176, 224, 0.60);
     border-radius: 10px; /* Adjust the border radius as needed */
 }
-.contact-row {
-  display: flex;
-  margin-bottom: 10px;
- 
-  align-items: center;
+.medium-font{
+  font-weight: 500;
 }
-
-
-.contact-row p {
- 
-  margin: 4px 4px 0;  /* Top margin only for spacing between label and text */
-  line-height: 1.5;
-}
-  .map-container {
+.map-container {
     width: 100%; /* Adjust width as per your requirement */
     height: 400px; /* Adjust height as per your requirement */
     padding: 20px;
@@ -203,7 +193,7 @@
       <a href="./softwareDevelopment.html" class="w3-bar-item w3-button "> Software Development</a>
       <a href="./managedServices.html" class="w3-bar-item w3-button"> Managed Services</a>
       <a href="./consulting.html" class="w3-bar-item w3-button">Consulting</a>
-      <a href="./contactUs.html" class="w3-bar-item w3-button active">Contact Us</a>
+      <a href="./contactUs.html" class="w3-bar-item w3-button w3-button-contact">Contact Us</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -244,27 +234,27 @@
         <h3 class="w3-xxlarge w3-hide-small">Let's talk!</h3>
         <h3 class="w3-xlarge w3-hide-large w3-hide-medium">Let's talk!</h3>
   
-      <p class="w3-large">Share your needs with us to gain a comprehensive understanding of your project.</p>
+      <p class="w3-large medium-font">Share your needs with us to gain a comprehensive understanding of your project.</p>
     </div>
     <div class="w3-col m8 l7" style="float: right;">
       <form action="form-handler.php" method="post">
         <p>
-        <div class="w3-col l4 m4">
-        <input class="w3-input w3-border" name="name" type="text" placeholder="Name" required name="Name">
+        <div class="w3-col l4 m4 ">
+        <input class="w3-input w3-border medium-font" name="name" type="text" placeholder="Name" required name="Name">
       </div>
       <div class="w3-col l4 m4">
-        <input class="w3-input w3-border" name="email" type="text" placeholder="Email" required name="Email">
+        <input class="w3-input w3-border medium-font" name="email" type="text" placeholder="Email" required name="Email">
       </div>
       <div class="w3-col l4 m4">
-        <input class="w3-input w3-border" name="phone" type="number" placeholder="Phone" required name="Phone">
+        <input class="w3-input w3-border medium-font" name="phone" type="number" placeholder="Phone" required name="Phone">
       </div>
         </p>
        
-        <p><input class="w3-input w3-border" name="message" type="text" placeholder="Message" required name="Message" 
+        <p><input class="w3-input w3-border medium-font" name="message" type="text" placeholder="Message" required name="Message" 
           style=" height: 120px;"
           ></p>
         <p>
-     <button type="submit" class="w3-button w3-white" style="min-height: 40px; border:1px solid #c0c0c0"> SEND MESSAGE</button>
+     <button type="submit" class="w3-button w3-white medium-font" style="min-height: 40px; border:1px solid #c0c0c0"> SEND</button>
     </p>
       </form>
     </div>
@@ -278,7 +268,7 @@
             <div class="w3-center" >
                 <img  src="./images/location_img.png" class="w3-padding-16"/>
                 </div>
-               <p class="w3-large"><b>OUR LOCATION</b><br>C56/30 Sector 62 Noida 201307, Uttar Pradesh, India</p>
+               <p class="w3-large medium-font"><b>OUR LOCATION</b><br>C56-30 Sector 62 Noida 201307, Uttar Pradesh, India</p>
             </div>
         </div>
             <div class="w3-col l4  m6  w3-padding-large">
@@ -305,7 +295,7 @@
         <h3 class="w3-xlarge w3-hide-large w3-hide-medium">  Find Us On Google Map</h3>
         <div class="map-container">
           <!-- Paste your Google Maps iframe code here -->
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.6385846216315!2d77.36083701508211!3d28.628223982422404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce55100000001%3A0xe6694b97a330a81!2sC56%2F30%20Sector%2062%20Noida%20201307%2C%20Uttar%20Pradesh%2C%20India!5e0!3m2!1sen!2sus!4v1582139345477!5m2!1sen!2sus" allowfullscreen=""></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.486418300514!2d77.3662938!3d28.6151803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5b6a68563b9%3A0xeaa799fe082c9bff!2sSynez%20Technologies!5e0!3m2!1sen!2sin!4v1716113106747!5m2!1sen!2sin" allowfullscreen=""></iframe>
         </div>
         
       
@@ -327,33 +317,45 @@
     <p><a style="text-decoration:none" href="#Consulting">CONSULTING</a></p>
  </div>
  <div class="w3-quarter w3-medium w3-padding-small">
-    <h4 class="w3-padding-16">Keep in touch</h4>
-    <div class="contact-row">
+  <h4 class="w3-padding-16">Keep in touch</h4>
+  <ul class="w3-ul" style="display: grid;">
+    <li style="display: flex;align-items: flex-start; ">
       Address:
-      <p>C56/30 Sector 62 Noida 201307, Uttar Pradesh, India</p>
-    </div>
-    <div class="contact-row">
-    Phone:
-      <p>+0120 3112279, +0120 3112280</p>
-    </div>
-    <div class="contact-row">
-     Mobile:
-      <p>+91 7290 040506</p>
-    </div>
-    <div class="contact-row">
-    Email:
-      <p><a href="mailto:info@synzetech.com">info@synzetech.com</a></p>
-    </div>
- </div>
+        <div  style="margin-left: 12px;">
+          <p style="margin: 0;"> C56/30 Sector 62 Noida 201307,</p>
+        <p style="margin: 0;">Uttar Pradesh, India</p>
+        </div>
+    </li> 
+    <li style="display: flex;align-items: flex-start; ">
+      Phone:
+        <div  style="margin-left: 12px;">
+          <p style="margin: 0;">+120 3112279, +120 3112280</p>
+        </div>
+    </li> 
+    <li style="display: flex;align-items: flex-start; ">
+      Mobile:
+        <div  style="margin-left: 12px;">
+          <p style="margin: 0;">+91 7290 040506</p>
+        </div>
+    </li> 
+    <li style="display: flex;align-items: flex-start; ">
+      Email:
+        <div  style="margin-left: 12px;">
+          <a href="mailto:info@synzetech.com">info@synzetech.com</a>
+        </div>
+    </li> 
+</ul>
+</div>
     <div class="w3-quarter w3-medium w3-padding-small">
         
         <div class="social-icon w3-half">
-            <a href="mailto:info@example.com"><i class="fa fa-envelope w3-hover-opacity"></i></a>
+            <a href="mailto:info@syneztech.com"><i class="fa fa-envelope w3-hover-opacity"></i></a>
           </div>
           <div class="social-icon w3-half">
-            <a href="https://www.linkedin.com/in/yourprofile"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/company/synez-tech/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
           </div>
- </div></div>
+         </div>
+</div>
 <div class="w3-border-top"> </div>
  <div class="w3-padding-16">Copyright © 2023. Synez Technologies</div>
  </footer>

@@ -140,20 +140,15 @@
   width: '100%';
   height: auto;
 }
-.contact-row {
-  display: flex;
-  margin-bottom: 10px;
- 
-  align-items: center;
+.mySlides {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
-
-.contact-row p {
- 
-  margin: 4px 4px 0;  /* Top margin only for spacing between label and text */
-  line-height: 1.5;
+.fade {
+  opacity: 1;
 }
-
 </style>
   </head>
 <body>
@@ -172,7 +167,7 @@
       <a href="./softwareDevelopment.html" class="w3-bar-item w3-button"> Software Development</a>
       <a href="./managedServices.html" class="w3-bar-item w3-button"> Managed Services</a>
       <a href="./consulting.html" class="w3-bar-item w3-button">Consulting</a>
-      <a href="./contactUs.html" class="w3-bar-item w3-button">Contact Us</a>
+      <a href="./contactUs.html" class="w3-bar-item w3-button w3-button-contact">Contact Us</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -232,32 +227,32 @@
   <div class="w3-container element" >
     <h3 class="w3-xxlarge w3-hide-small">What We do</h3>
     <h3 class="w3-xlarge w3-hide-large w3-hide-medium">What We do</h3>
-    <div class="w3-row-padding" style="justify-content: space-between; " >
-     <div class="w3-col l4 m6" style="display: grid;grid-row-gap: 30px">
-   <div class="w3-orange" style="padding: 16px 24px; width: 100%;height: 390.461px;">
+    <div class="w3-row-padding">
+     <div class="w3-col l4 m6" style="display: grid;gap: 30px ">
+   <div class="w3-orange" style="padding: 16px 24px; width: 95%;height: 390.461px;">
      <h2> Consultation</h2>
      <p style="line-height: 40px">
-       Empowering clients with innovative<br> technology for digital <br> transformation success as we <br> partner together to achieve your IT <br>goals.</p>
+       Empowering clients with innovative  technology for digital  transformation success as we  partner together to achieve your IT goals.</p>
        <a href="./consulting.html" class="button">   <i class="fa fa-link  w3-hover-opacity"></i>   Go to consulting</a>
    </div>
-   <img src="./images/home_img4.png" style="width: 100%; height:505px"  class="w3-hover-opacity" alt="Home img4">
+   <img src="./images/home_img4.png" style="width: 95%; height:505px"  class="w3-hover-opacity" alt="Home img4">
  </div>
- <div class="w3-col l4 m6" style="display: grid;grid-row-gap: 30px;">
-   <img src="./images/home_img2.png" style="width: 100%;height:490px" class="w3-hover-opacity" alt="Home img2">
-    <div class="w3-blue" style="padding: 16px 24px; width:  100%;height:406.079px;">
+ <div class="w3-col l4 m6" style="display: grid;gap: 30px;">
+   <img src="./images/home_img2.png" style="width: 95%;height:490px" class="w3-hover-opacity" alt="Home img2">
+    <div class="w3-blue" style="padding: 16px 24px; width:  95%;height:406.079px;">
      <h2> Software development</h2>
-     <p style="line-height: 40px">Tailored solutions aligned with your  <br/>business culture and goals - trust us <br> to exceed your expectations <br> with proven list of satisfied clients.</p>
+     <p style="line-height: 40px">Tailored solutions aligned with your  business culture and goals - trust us  to exceed your expectations  with proven list of satisfied clients.</p>
        <a href="./softwareDevelopment.html" class="button">   <i class="fa fa-link  w3-hover-opacity"></i>   Go to software development</a>
      </div>
  </div>
- <div class="w3-col l4 m6" style="display: grid;grid-row-gap: 30px;">
-   <img src="./images/home_img3.png" style="width: 100% ; height:196px" class="w3-hover-opacity" alt="Home img3">
-    <div class="w3-deep-blue" style="padding: 16px 24px; width:  100%; height: 344px;">
+ <div class="w3-col l4 m6" style="display: grid;gap: 30px">
+   <img src="./images/home_img3.png" style="width: 95% ; height:196px" class="w3-hover-opacity" alt="Home img3">
+    <div class="w3-deep-blue" style="padding: 16px 24px; width:  95%; height: 344px;">
      <h2> Managed services</h2>
-     <p style="line-height: 40px">Efficiently manage your IT needs  <br/>prioritize your core business <br> activities with our reliable and<br> secure managed IT services.</p>
+     <p style="line-height: 40px">Efficiently manage your IT needs  prioritize your core business  activities with our reliable and secure managed IT services.</p>
        <a href="./managedServices.html" class="button">   <i class="fa fa-link  w3-hover-opacity"></i>   Go to managed services</a>
      </div>
-     <img src="./images/home_img5.png" style="width: 100%; height: 327px;" class="w3-hover-opacity" alt="Home img3">
+     <img src="./images/home_img5.png" style="width: 95%; height: 327px;" class="w3-hover-opacity" alt="Home img3">
  </div>
  </div>
  </div>
@@ -274,13 +269,23 @@
       <a onclick="plusSlides(-1)"> <i class="fa fa-long-arrow-left w3-hover-opacity w3-xxxlarge"></i></a>
     </div>
     <div class="w3-col s8">
-      <p class="w3-center" style="font-size: 29px; font-weight: 400;line-height: 40px;"> Lorem Ipsum is simply dummy text of the printing and<br/>typesetting industry. Lorem Ipsum has been the industry's<br/> standard dummy text</p>
-      <p class="w3-center w3-text-orange"  style="font-size: 23px; font-weight: 400;line-height: 40px;"> <b> John Smith <br/> CEO of ABC </b> </p>
+      <div class="mySlides fade">
+      <p class="w3-center" style="font-size: 29px; font-weight: 400;line-height: 40px;"> Exceptional service and expertise!<br/> Our IT infrastructure underwent a seamless transformation with their support.  Highly recommend!</p>
+      <p class="w3-center w3-text-orange"  style="font-size: 23px; font-weight: 400;line-height: 40px;"> <b> Arnaud <br/> Nova Edge Ltd., UK </b> </p>
+      </div>
+      <div class="mySlides fade">
+      <p class="w3-center" style="font-size: 29px; font-weight: 400;line-height: 40px;"> Incredible team!<br/> Their prompt response and efficient solutions have been instrumental in keeping our systems running smoothly.</p>
+      <p class="w3-center w3-text-orange"  style="font-size: 23px; font-weight: 400;line-height: 40px;"> <b> Dave <br/> Kogitas (MCPC) Limited, UK </b> </p>
+      </div>
+      <div class="mySlides fade">
+      <p class="w3-center" style="font-size: 29px; font-weight: 400;line-height: 40px;"> Reliable and innovative!<br/>Their IT solutions have significantly boosted our productivity and security. A trusted partner indeed.</p>
+      <p class="w3-center w3-text-orange"  style="font-size: 23px; font-weight: 400;line-height: 40px;"> <b> Rajeeve <br/> TVIN,INDIA </b> </p>
+    </div>
       <div class="w3-center w3-padding-32" >
         <span class="dot" onclick="currentSlide(1)"></span> 
         <span class="dot" onclick="currentSlide(2)"></span> 
         <span class="dot" onclick="currentSlide(3)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span> 
+     
       </div>
     </div>
      <div  class="w3-col s2" style="margin-top: 100px; ">
@@ -310,38 +315,47 @@
  </div>
  <div class="w3-quarter w3-medium w3-padding-small">
   <h4 class="w3-padding-16">Keep in touch</h4>
-
-  <div class="contact-row">
-    Address:
-    <p>C56/30 Sector 62 Noida 201307, Uttar Pradesh, India</p>
-  </div>
-  <div class="contact-row">
-  Phone:
-    <p>+0120 3112279, +0120 3112280</p>
-  </div>
-  <div class="contact-row">
-   Mobile:
-    <p>+91 7290 040506</p>
-  </div>
-  <div class="contact-row">
-  Email:
-    <p><a href="mailto:info@synzetech.com">info@synzetech.com</a></p>
-  </div>
-  </div>
+  <ul class="w3-ul" style="display: grid;">
+    <li style="display: flex;align-items: flex-start; ">
+      Address:
+        <div  style="margin-left: 12px;">
+          <p style="margin: 0;"> C56/30 Sector 62 Noida 201307,</p>
+        <p style="margin: 0;">Uttar Pradesh, India</p>
+        </div>
+    </li> 
+    <li style="display: flex;align-items: flex-start; ">
+      Phone:
+        <div  style="margin-left: 12px;">
+          <p style="margin: 0;">+120 3112279, +120 3112280</p>
+        </div>
+    </li> 
+    <li style="display: flex;align-items: flex-start; ">
+      Mobile:
+        <div  style="margin-left: 12px;">
+          <p style="margin: 0;">+91 7290 040506</p>
+        </div>
+    </li> 
+    <li style="display: flex;align-items: flex-start; ">
+      Email:
+        <div  style="margin-left: 12px;">
+          <a href="mailto:info@synzetech.com">info@synzetech.com</a>
+        </div>
+    </li> 
+</ul>
+</div>
     <div class="w3-quarter w3-medium w3-padding-small">
         
         <div class="social-icon w3-half">
-            <a href="mailto:info@example.com"><i class="fa fa-envelope w3-hover-opacity"></i></a>
+            <a href="mailto:info@syneztech.com"><i class="fa fa-envelope w3-hover-opacity"></i></a>
           </div>
           <div class="social-icon w3-half">
-            <a href="https://www.linkedin.com/in/yourprofile"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/company/synez-tech/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
           </div>
-  </div>
+         </div>
 </div>
 <div class="w3-border-top"> </div>
  <div class="w3-padding-16">Copyright © 2023. Synez Technologies</div>
- 
-</footer>
+ </footer>
 
  
 <script>
@@ -383,7 +397,29 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+var slideIndex = 1;
+showSlides(slideIndex);
 
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+      slides[i].style.opacity = 0;
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  setTimeout(function(){ slides[slideIndex-1].style.opacity = 1; }, 10);
+}
    
 </script>
 

@@ -26,7 +26,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-image: url("./images/SD_bg_img1.png");
-    height: auto;
+    height: 700px;
     width: '100%';
     }
     .bgimg-1::after {
@@ -107,7 +107,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 500px; /* Or use 100vh for full viewport height */
+  height: 700px; /* Or use 100vh for full viewport height */
   width: 100vw; /* This will cover the full width of the viewport */
   filter: brightness(0.7);
   z-index: 1; 
@@ -138,7 +138,7 @@
 }
 .grid-container {
   display: grid;
-  grid-template-columns: 400px 400px 400px;
+  grid-template-columns: auto auto auto;
   justify-content: center;
   align-content: center;
   padding: 0px 110px;
@@ -147,6 +147,9 @@
 .grid-item {
   border: 0.5px solid #CFCFCF;
   padding: 32px;
+  width: 400px;
+  justify-content: center;
+  align-items: center;
 }
 
 /* For laptops and desktops */
@@ -175,20 +178,7 @@
       padding: 16px; /* Adjust padding for grid items */
   }
 }
-.contact-row {
-  display: flex;
-  margin-bottom: 10px;
- 
-  align-items: center;
-}
-
-
-.contact-row p {
- 
-  margin: 4px 4px 0;  /* Top margin only for spacing between label and text */
-  line-height: 1.5;
-}
-  </style>
+</style>
   </head>
 <body>
 
@@ -206,7 +196,7 @@
       <a href="./softwareDevelopment.html" class="w3-bar-item w3-button active"> Software Development</a>
       <a href="./managedServices.html" class="w3-bar-item w3-button"> Managed Services</a>
       <a href="./consulting.html" class="w3-bar-item w3-button">Consulting</a>
-      <a href="./contactUs.html" class="w3-bar-item w3-button">Contact Us</a>
+      <a href="./contactUs.html" class="w3-bar-item w3-button w3-button-contact">Contact Us</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -224,7 +214,7 @@
       <a href="./softwareDevelopment.html" class="w3-bar-item w3-button active"> Software Development</a>
       <a href="./managedServices.html" class="w3-bar-item w3-button"> Managed Services</a>
       <a href="./consulting.html" class="w3-bar-item w3-button">Consulting</a>
-      <a href="./contactUs.html" class="w3-bar-item w3-button">Contact Us</a>
+      <a href="./contactUs.html" class="w3-bar-item w3-button ">Contact Us</a>
 </nav>
 
 <!-- Header with full-height image -->
@@ -249,7 +239,7 @@
   
           </div>
           <div class="w3-col l5 m9 w3-padding-64" style="float: right;">
-            <img class="w3-image w3-round-small" src="./images/sd_img1.png" alt="home_img1"  style=" box-shadow: 20px -20px  #E98862" style="max-width: 100%;
+            <img class="w3-image w3-round-small" src="./images/SD_img1.png" alt="home_img1"  style=" box-shadow: 20px -20px  #E98862" style="max-width: 100%;
             height: auto;">
           </div>
         </div>
@@ -262,50 +252,52 @@
     <div class="grid-container">
         <div class="grid-item">
             <img  src="./images/core_img1.png" class="w3-padding-32"/>
-            <h4 class="w3-text-red" style="font-size: 25px; line-height: normal;"> <b>Product Conceptualization <br> & Consulting</b></h4>
-           <p class="w3-large" style="font-size: 18px; line-height: 36px;">
+            <h4  style="font-size: 20px; line-height: normal; color: #FF4500;"> <b>Product Conceptualization <br> & Consulting</b></h4>
+           <p  style="font-size: 16px; line-height: 36px;">
             <!-- We provide end-to-end support, validating your idea, building a prototype, adjusting the tech stack, and outlining a market-driven vision for future development. -->
-            We provide end-to-end support validating your idea, building a prototype, adjusting the tech stack, and<br> outlining a market-driven vision for future development.
+            We provide end-to-end support,<br> validating your idea, building a <br>prototype, adjusting the tech stack, and <br>outlining a market-driven vision for <br> future development.
            </p>
         </div>
         <div class="grid-item">
             <img  src="./images/core_img2.png" class="w3-padding-32"/>
-            <h4 class="w3-text-red" style="font-size: 25px; line-height: normal;"> <b>User Experience & User <br>Interface design</b></h4>
-           <p class="w3-large" style="font-size: 18px; line-height: 36px;">
+            <h4  style="font-size: 20px; line-height: normal; color: #FF4500"> <b>User Experience & User <br>Interface design</b></h4>
+           <p 
+            style="font-size: 16px; line-height: 36px;">
           <!--   We leverage extensive research on your target audience to inform our product design decisions, creating intuitive interfaces that deliver memorable experiences and a clear understanding of your offering. -->
-             We leverage extensive research on your target audience to inform our product  design decisions, creating intuitive interfaces that deliver memorable experiences and a clear understanding of your offering. 
+             We leverage extensive research on your  <br>target audience to inform our product <br> design decisions, creating intuitive <br>interfaces that deliver memorable <br>experiences and a clear understanding <br> of your offering. 
            </p>
         </div>
         <div class="grid-item">
             <img  src="./images/core_img3.png" class="w3-padding-32"/>
-            <h4 class="w3-text-red" style="font-size: 25px; line-height: normal;"> <b>Minimum Viable Product<br> (MVP) Development</b></h4>
-           <p class="w3-large" style="font-size: 18px; line-height: 36px;">
+            <h4  style="font-size: 20px; line-height: normal; color: #FF4500"> <b>Minimum Viable Product<br> (MVP) Development</b></h4>
+           <p 
+            style="font-size: 16px; line-height: 36px;">
           <!--   With our end-to-end partnership, we transform your idea into a functional prototype. From project planning to developing a proof-of-concept, we prioritize user feedback, ensuring quality assurance while optimizing resources. -->
           With our end-to-end partnership, we <br> transform your idea into a functional <br> prototype. From project planning to <br>developing a proof-of-concept, we prioritize user feedback, ensuring quality assurance while optimizing <br>resources. 
            </p>
         </div>
     </div>
-    <div style="background-color:#f1f1f1!important; ">
+    <div style="background-color:F8F8F8!important; ">
     <div class="w3-border-top"> </div>
     <div class="grid-container">
         <div class="grid-item">
             <img  src="./images/core_img4.png" class="w3-padding-32"/>
             <h4 class="w3-text-deep-blue"> <b>Software as a Service <br>(SaaS) Development</b></h4>
-           <p class="w3-large">
+           <p  style="font-size: 16px; line-height: 36px;">
             As a leading provider of SaaS product development services, our expertise in cloud-based applications sets us apart. Whether you're a startup or an established enterprise, we're prepared to be your partner throughout the entire SaaS software development journey. From conceptualization to post-deployment maintenance, we're here to ensure your success in the ever-evolving world of cloud-based solutions.
            </p>
         </div>
         <div class="grid-item">
             <img  src="./images/core_img5.png" class="w3-padding-32"/>
           <h4 class="w3-text-deep-blue"> <b>Software Testing and Quality Assurance</b></h4>
-         <p class="w3-large">
+         <p  style="font-size: 16px; line-height: 36px;">
           We subject your software to meticulous testing, guaranteeing the utmost security and stable performance even under regular and peak loads. Our team of experts possesses deep expertise in both manual and automated testing services. Through rigorous testing methodologies, we identify and resolve any potential vulnerabilities or performance issues, ensuring a robust and reliable software solution.
          </p>
         </div>
         <div class="grid-item">
             <img  src="./images/core_img6.png" class="w3-padding-32"/>
-            <h4 class="w3-text-deep-blue"> <b>Migration & Modernization</b></h4>
-           <p class="w3-large">
+            <h4 class="w3-text-deep-blue"> <b>Migration & <br> Modernization</b></h4>
+           <p  style="font-size: 16px; line-height: 36px;">
             Our experts specialize in re-architecting on-premises solutions or seamlessly migrating existing software to different technologies, all while guaranteeing no performance drop. Rest assured, the migrated app will be seamlessly integrated with the systems supporting your established business processes, ensuring a smooth and uninterrupted workflow.
            </p>
         </div>
@@ -334,31 +326,45 @@
  </div>
  <div class="w3-quarter w3-medium w3-padding-small">
     <h4 class="w3-padding-16">Keep in touch</h4>
-    <div class="contact-row">
-      Address:
-      <p>C56/30 Sector 62 Noida 201307, Uttar Pradesh, India</p>
-    </div>
-    <div class="contact-row">
-    Phone:
-      <p>+0120 3112279, +0120 3112280</p>
-    </div>
-    <div class="contact-row">
-     Mobile:
-      <p>+91 7290 040506</p>
-    </div>
-    <div class="contact-row">
-    Email:
-      <p><a href="mailto:info@synzetech.com">info@synzetech.com</a></p>
-    </div>
- </div>
-    <div class="w3-quarter w3-medium w3-padding-small">
-        
-        <div class="social-icon w3-half">
-            <a href="mailto:info@example.com"><i class="fa fa-envelope w3-hover-opacity"></i></a>
+    
+    <ul class="w3-ul" style="display: grid;">
+      <li style="display: flex;align-items: flex-start; ">
+        Address:
+          <div  style="margin-left: 12px;">
+            <p style="margin: 0;"> C56/30 Sector 62 Noida 201307,</p>
+          <p style="margin: 0;">Uttar Pradesh, India</p>
           </div>
+      </li> 
+      <li style="display: flex;align-items: flex-start; ">
+        Phone:
+          <div  style="margin-left: 12px;">
+            <p style="margin: 0;">+120 3112279, +120 3112280</p>
+          </div>
+      </li> 
+      <li style="display: flex;align-items: flex-start; ">
+        Mobile:
+          <div  style="margin-left: 12px;">
+            <p style="margin: 0;">+91 7290 040506</p>
+          </div>
+      </li> 
+      <li style="display: flex;align-items: flex-start; ">
+        Email:
+          <div  style="margin-left: 12px;">
+            <a href="mailto:info@synzetech.com">info@synzetech.com</a>
+          </div>
+      </li> 
+  </ul>
+  </div>
+      <div class="w3-quarter w3-medium w3-padding-small">
+          
           <div class="social-icon w3-half">
-            <a href="https://www.linkedin.com/in/yourprofile"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-          </div>
+              <a href="mailto:info@syneztech.com"><i class="fa fa-envelope w3-hover-opacity"></i></a>
+            </div>
+            <div class="social-icon w3-half">
+              <a href="https://www.linkedin.com/company/synez-tech/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+            </div>
+           </div>
+  </div>
  </div></div>
 <div class="w3-border-top"> </div>
  <div class="w3-padding-16">Copyright © 2023. Synez Technologies</div>
