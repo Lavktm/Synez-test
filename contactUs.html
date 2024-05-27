@@ -162,8 +162,17 @@
     background: rgba(0, 176, 224, 0.60);
     border-radius: 10px; /* Adjust the border radius as needed */
 }
-.medium-font{
-  font-weight: 500;
+.medium-font::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity: 1; /* Firefox */
+}
+
+.medium-font:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: black;
+}
+
+.medium-font::-ms-input-placeholder { /* Microsoft Edge */
+  color: black;
 }
 .map-container {
     width: 100%; /* Adjust width as per your requirement */
@@ -239,7 +248,7 @@
     <div class="w3-col m8 l7" style="float: right;">
       <form action="form-handler.php" method="post">
         <p>
-        <div class="w3-col l4 m4 ">
+        <div class="w3-col l4 m4 " >
         <input class="w3-input w3-border medium-font" name="name" type="text" placeholder="Name" required name="Name">
       </div>
       <div class="w3-col l4 m4">
@@ -291,8 +300,8 @@
         </div>
     </div>
     <div class="w3-container element">
-        <h3 class="w3-xxlarge w3-hide-small">Find Us On Google Map</h3>
-        <h3 class="w3-xlarge w3-hide-large w3-hide-medium">  Find Us On Google Map</h3>
+        <h3 class="w3-xxlarge w3-hide-small" style="font-weight: 500;">Find Us On Google Map</h3>
+        <h3 class="w3-xlarge w3-hide-large w3-hide-medium" style="font-weight: 500;">  Find Us On Google Map</h3>
         <div class="map-container">
           <!-- Paste your Google Maps iframe code here -->
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.486418300514!2d77.3662938!3d28.6151803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5b6a68563b9%3A0xeaa799fe082c9bff!2sSynez%20Technologies!5e0!3m2!1sen!2sin!4v1716113106747!5m2!1sen!2sin" allowfullscreen=""></iframe>
@@ -329,7 +338,7 @@
     <li style="display: flex;align-items: flex-start; ">
       Phone:
         <div  style="margin-left: 12px;">
-          <p style="margin: 0;">+120 3112279, +120 3112280</p>
+          <p style="margin: 0;">120 3112279, 120 3112280</p>
         </div>
     </li> 
     <li style="display: flex;align-items: flex-start; ">

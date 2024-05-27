@@ -113,9 +113,21 @@
   background-position: center;
   height: 500px; /* Or use 100vh for full viewport height */
   width: 100vw; /* This will cover the full width of the viewport */
- 
   z-index: 1; 
+  position: relative;
 }
+
+.banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* Black with 40% opacity */
+  z-index: 2; /* Ensures the overlay is above the background but below the text */
+}
+
 
 
 .element {
@@ -293,8 +305,8 @@
     </div>
     </div>
     <div class="banner w3-padding-64 element">
-      <p class="w3-text-white w3-hide-small" style="font-size: 40px; line-height: 42px;  z-index: 10;"> <b>Increasing the level <br>of customer<br> satisfaction in every <br>management</b></p>
-      <p class="w3-text-white w3-hide-medium w3-hide-large" style="font-size: 32px; line-height: 42px;  z-index: 10;"> <b>Increasing the level <br>of customer<br> satisfaction in every <br>management</b></p>
+      <p class="w3-text-white w3-hide-small" style="font-size: 40px; line-height: 42px;  z-index: 3;  position: relative; margin-top: 16px;"> <b>Increasing the level <br>of customer<br> satisfaction in every <br>management</b></p>
+      <p class="w3-text-white w3-hide-medium w3-hide-large" style="font-size: 32px; line-height: 42px;  z-index: 3;  position: relative;"> <b>Increasing the level <br>of customer<br> satisfaction in every <br>management</b></p>
     </div>
      
 <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
@@ -326,7 +338,7 @@
     <li style="display: flex;align-items: flex-start; ">
       Phone:
         <div  style="margin-left: 12px;">
-          <p style="margin: 0;">+120 3112279, +120 3112280</p>
+          <p style="margin: 0;">120 3112279, 120 3112280</p>
         </div>
     </li> 
     <li style="display: flex;align-items: flex-start; ">
