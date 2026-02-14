@@ -1,440 +1,229 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="icon" type="image/png" href="./images/company_logo.png">
-    <title>Syneztech Home</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  
-
-    <style>
-    body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto"}
-
-    body, html {
-      height: 100%;
-      line-height: 1.8;
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peach, Be My Valentine? 💖</title>
+  <style>
+    :root {
+      --pink-1: #ff4f9a;
+      --pink-2: #ff7fb8;
+      --cream: #fff8f2;
+      --wine: #8b1c50;
+      --shadow: 0 14px 35px rgba(255, 79, 154, 0.25);
     }
 
-    /* Full height image header */
-    .bgimg-1 {
-    position: relative; /* Necessary for positioning the pseudo-element */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("./images/home_bg_img1.png");
-    height: auto;
-    width: '100%';
-    overflow: hidden;
-   }
-   .bgimg-1::after {
-    content: ''; /* Pseudo-element content should be empty */
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.4); /* Black with opacity, adjust the last number as needed */
-    pointer-events: none; /* Ensures the overlay doesn't interfere with clicking/interacting with elements underneath */
-}
-     .w3-bar .w3-button {
-      padding: 16px;
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Poppins", "Segoe UI", sans-serif;
+      color: #5c1d3f;
+      overflow-x: hidden;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,0.95), transparent 30%),
+        radial-gradient(circle at 85% 15%, rgba(255,255,255,0.75), transparent 30%),
+        linear-gradient(135deg, #ffd9ea, #ffe7d9 45%, #ffe9f7);
+      display: grid;
+      place-items: center;
+      padding: 24px;
     }
-   
-    .w3-bar-item.w3-button.active {
-        color: #FF4500; /* This will change the text color to red */
-        /* If you want to change the background color instead, use:
-           background-color: red; */
+
+    .card {
+      width: min(700px, 100%);
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(8px);
+      border: 2px solid rgba(255, 111, 173, 0.25);
+      box-shadow: var(--shadow);
+      border-radius: 28px;
+      padding: clamp(1.4rem, 2.5vw, 2.2rem);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      min-height: 420px;
     }
-    .social-icon {
-        width: 50px; /* Adjust as needed */
-        height: 50px; /* Adjust as needed */
-        background-color:'transparent'; /* Replace with your actual icon background color */
-        margin: 0 5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 0px; /* Adjust as needed */
-        border: 1px solid #fff;
-       }
-      .social-icon i {
-        color: #fff; /* Replace with your actual icon color */
-        font-size: 18px; /* Adjust as needed */
+
+    .hearts {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.2;
+      background-image:
+        radial-gradient(circle at 15% 25%, #ff4f9a 0 6px, transparent 7px),
+        radial-gradient(circle at 75% 18%, #ff7fb8 0 8px, transparent 9px),
+        radial-gradient(circle at 35% 85%, #ff7fb8 0 7px, transparent 8px),
+        radial-gradient(circle at 90% 75%, #ff4f9a 0 5px, transparent 6px);
+    }
+
+    h1 {
+      font-size: clamp(1.8rem, 3.5vw, 3rem);
+      margin: 0.5rem 0 0.3rem;
+      color: var(--wine);
+    }
+
+    .subtitle {
+      font-size: clamp(1rem, 2.4vw, 1.2rem);
+      margin-bottom: 1.5rem;
+      color: #82345d;
+    }
+
+    .love-note {
+      font-size: clamp(1rem, 2.2vw, 1.18rem);
+      line-height: 1.6;
+      margin: 0 auto 1.8rem;
+      max-width: 54ch;
+    }
+
+    .button-zone {
+      position: relative;
+      height: 170px;
+      width: 100%;
+      margin-top: 0.8rem;
+    }
+
+    .btn {
+      border: none;
+      padding: 0.9rem 1.6rem;
+      border-radius: 999px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      touch-action: manipulation;
+    }
+
+    .btn:active { transform: scale(0.97); }
+
+    #yesBtn {
+      background: linear-gradient(135deg, var(--pink-1), var(--pink-2));
+      color: white;
+      box-shadow: 0 10px 24px rgba(255, 79, 154, 0.35);
+      margin-right: 10px;
+    }
+
+    #yesBtn:hover { transform: translateY(-2px) scale(1.03); }
+
+    #noBtn {
+      position: absolute;
+      top: 82px;
+      left: 60%;
+      background: #fff;
+      color: #ad2e66;
+      border: 2px solid #ffc0db;
+      box-shadow: 0 8px 20px rgba(173, 46, 102, 0.18);
+    }
+
+    #yesWrap {
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    .hidden { display: none; }
+
+    .romance {
+      animation: fadeIn 0.8s ease forwards;
+    }
+
+    .big-heart {
+      font-size: clamp(3.2rem, 9vw, 5.2rem);
+      margin-top: 0.2rem;
+      animation: pulse 1.3s ease-in-out infinite;
+      display: inline-block;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.15); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 560px) {
+      .button-zone {
+        height: 190px;
       }
-      .position-relative {
-  position: relative;
-}
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  margin: 10px 0;
-  border:  1px solid #fff;;
-}
-
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
- .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-.banner {
-  background-image: url('./images/home_bg_img2.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 500px; /* Or use 100vh for full viewport height */
-  width: 100vw; /* This will cover the full width of the viewport */
-  z-index: 1; 
-  position: relative;
-}
-
-.banner::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4); /* Black with 40% opacity */
-  z-index: 2; /* Ensures the overlay is above the background but below the text */
-}
-
-
-
-.element {
-  padding: 32px 16px;
-}
-
-/* Media query for laptop screens (1024px and above) */
-@media screen and (min-width: 1024px) {
-  .element {
-    padding: 64px 110px;
-  }
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: center;
-  align-content: center;
-  padding: 0px 110px;
-  position: relative;
-  z-index:2;
-  width: '100%';
-  height: auto;
-}
-.mySlides {
-  display: none;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.fade {
-  opacity: 1;
-}
-</style>
-  </head>
+      #yesWrap {
+        margin-top: 10px;
+      }
+      #noBtn {
+        top: 100px;
+        left: 54%;
+      }
+    }
+  </style>
+</head>
 <body>
+  <main class="card" id="questionCard">
+    <div class="hearts"></div>
+    <section id="questionPage">
+      <h1>Hi Peach 💗</h1>
+      <p class="subtitle">I made this little page only for you.</p>
+      <p class="love-note">
+        You make my world brighter, softer, and sweeter every day.
+        So I have one very important question...
+      </p>
+      <h1>Will you be my Valentine? 🌹</h1>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar" >
-    <div class="w3-bar-item"> 
-    <h1 class="w3-text-deep-blue w3-hide-small"><img style="margin-bottom:8px" alt="company logo" src="./images/company_logo.png"/><strong> SYNEZ</strong></h1>
-    <h4 class="w3-text-deep-blue w3-hide-medium w3-hide-large w3-padding-large"><img style="margin-bottom:8px" alt="company logo" src="./images/company_logo.png"/><strong> SYNEZ</strong></h2>
-    </div>
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small" style="z-index: 1000">
-        <a href="./index.html" class="w3-bar-item w3-button active">Home</a>
-      <a href="./aboutUs.html" class="w3-bar-item w3-button">About us</a>
-      <a href="./softwareDevelopment.html" class="w3-bar-item w3-button"> Software Development</a>
-      <a href="./managedServices.html" class="w3-bar-item w3-button"> Managed Services</a>
-      <a href="./consulting.html" class="w3-bar-item w3-button">Consulting</a>
-      <a href="./contactUs.html" class="w3-bar-item w3-button w3-button-contact">Contact Us</a>
-    </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars" style="font-size: 24px;"></i>
-    </a>
-  </div>
-</div>
-
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="./index.html" class="w3-bar-item w3-button">Home</a>
-      <a href="./aboutUs.html" class="w3-bar-item w3-button">About us</a>
-      <a href="./softwareDevelopment.html" class="w3-bar-item w3-button"> Software Development</a>
-      <a href="./managedServices.html" class="w3-bar-item w3-button"> Managed Services</a>
-      <a href="./consulting.html" class="w3-bar-item w3-button">Consulting</a>
-      <a href="./contactUs.html" class="w3-bar-item w3-button">Contact Us</a>
-</nav>
-
-<!-- Header with full-height image -->
-<header class="bgimg-1 w3-text-white w3-text-white element" id="home" style="z-index:-10;">
-  <div class="grid-container" > 
-   
-  <span class="w3-jumbo w3-text-light-grey w3-hide-small" ><strong>WE</strong></span>
-  <span class="w3-text-light-grey w3-hide-large w3-hide-medium" style="font-size: 96px; margin-top:96px"><strong>WE</strong></span>
-  <span class="w3-xxxlarge  w3-hide-small  w3-padding-small" style="line-height:64px; margin-top:128px" ><strong>INNOVATE <br>ASSOCIATE <br>INSPIRE</strong> </span>
-  <span class="w3-hide-large w3-hide-medium  w3-padding-small w3-padding-48"   style="line-height:24px; margin-top:96px"><strong>INNOVATE <br>ASSOCIATE <br>INSPIRE</strong> </span>
-  </div>
- </header>
- <!--  <div class="w3-display-middle w3-text-white" style="line-height: 1.2; transform:translate(-100%,-70%)">
-  <span class="w3-jumbo w3-text-light-grey w3-hide-small"><strong>WE</strong></span>
-  <span class="w3-text-light-grey w3-hide-large w3-hide-medium" style="font-size: 96px;"><strong>WE</strong></span>
-  </div> 
-  <div class="w3-display-middle w3-text-white" style="line-height: 1.2; transform:translate(-0%,-80%)">
-  <span class="w3-xxxlarge  w3-hide-small  w3-padding-small w3-padding-48" style="transform:translate(-50%,-80%)"><strong>INNOVATE <br>ASSOCIATE <br>INSPIRE</strong> </span>
-  <span class="w3-hide-large w3-hide-medium  w3-padding-small w3-padding-48" style="transform:translate(-50%,-80%); font-size: 22px;"><strong>INNOVATE <br>ASSOCIATE <br>INSPIRE</strong> </span>
-  </div>  -->
-  
-  <!---Who we are-->
-  <div class="w3-container element" >
-    <div class="w3-row-padding">
-      <div class="w3-col m6">
-        <h3 class="w3-xxlarge w3-hide-small">Who we are</h3>
-        <h3 class="w3-xlarge w3-hide-large w3-hide-medium">Who we are</h3>
-        <p class=" w3-hide-small" style="line-height: 40px">We provide IT guidance on the process of product<br/> development by Creating and implementing the bleeding edge<br/> technologies to achieve an overall goal.</p>
-        <p class="w3-hide-large w3-hide-medium" style="line-height: 40px">We provide IT guidance on the process of product development by Creating and implementing the bleeding edge technologies to achieve an overall goal.</p>
-        <p class="w3-padding-16"><a href="./aboutUs.html" class="w3-button w3-blue " style="min-height: 40px;border-radius:30px"> How we work</a></p>
-      </div>
-      <div class="w3-col m6 w3-right-align">
-        <img class="w3-image w3-round-small" src="./images/home_img1.png" alt="home_img1"  style=" box-shadow: 20px -20px  #2D2F8E">
-      </div>
-    </div>
-  </div>
- 
-  <!---What we do-->
-  <div class="w3-container element" >
-    <h3 class="w3-xxlarge w3-hide-small">What We do</h3>
-    <h3 class="w3-xlarge w3-hide-large w3-hide-medium">What We do</h3>
-    <div class="w3-row-padding">
-     <div class="w3-col l4 m6" style="display: grid;gap: 30px ">
-   <div class="w3-orange" style="padding: 16px 24px; width: 95%;height: 390.461px;">
-     <h2> Consultation</h2>
-     <p style="line-height: 40px">
-       Empowering clients with innovative  technology for digital  transformation success as we  partner together to achieve your IT goals.</p>
-       <a href="./consulting.html" class="button">   <i class="fa fa-link  w3-hover-opacity"></i>   Go to consulting</a>
-   </div>
-   <img src="./images/home_img4.png" style="width: 95%; height:505px"  class="w3-hover-opacity" alt="Home img4">
- </div>
- <div class="w3-col l4 m6" style="display: grid;gap: 30px;">
-   <img src="./images/home_img2.png" style="width: 95%;height:490px" class="w3-hover-opacity" alt="Home img2">
-    <div class="w3-blue" style="padding: 16px 24px; width:  95%;height:406.079px;">
-     <h2> Software development</h2>
-     <p style="line-height: 40px">Tailored solutions aligned with your  business culture and goals - trust us  to exceed your expectations  with proven list of satisfied clients.</p>
-       <a href="./softwareDevelopment.html" class="button">   <i class="fa fa-link  w3-hover-opacity"></i>   Go to software development</a>
-     </div>
- </div>
- <div class="w3-col l4 m6" style="display: grid;gap: 30px">
-   <img src="./images/home_img3.png" style="width: 95% ; height:196px" class="w3-hover-opacity" alt="Home img3">
-    <div class="w3-deep-blue" style="padding: 16px 24px; width:  95%; height: 344px;">
-     <h2> Managed services</h2>
-     <p style="line-height: 40px">Efficiently manage your IT needs  prioritize your core business  activities with our reliable and secure managed IT services.</p>
-       <a href="./managedServices.html" class="button">   <i class="fa fa-link  w3-hover-opacity"></i>   Go to managed services</a>
-     </div>
-     <img src="./images/home_img5.png" style="width: 95%; height: 327px;" class="w3-hover-opacity" alt="Home img3">
- </div>
- </div>
- </div>
-   </div>
-
-
-
-
-   <!---What client says-->
-  <h3 class="w3-xxlarge w3-hide-small element">What  Client Says</h3>
-  <h3 class="w3-xlarge w3-hide-medium w3-hide-large element">What Client Says</h3>
-    <div  class="w3-container w3-row-padding w3-light-grey element">
-    <div class="w3-col s2" style="margin-top: 100px;">
-      <a onclick="plusSlides(-1)"> <i class="fa fa-long-arrow-left w3-hover-opacity w3-xxxlarge"></i></a>
-    </div>
-    <div class="w3-col s8">
-      <div class="mySlides fade">
-      <p class="w3-center" style="font-size: 29px; font-weight: 400;line-height: 40px;"> Exceptional service and expertise!<br/> Our IT infrastructure underwent a seamless transformation with their support.  Highly recommend!</p>
-      <p class="w3-center w3-text-orange"  style="font-size: 23px; font-weight: 400;line-height: 40px;"> <b> Arnaud <br/> Nova Edge Ltd., UK </b> </p>
-      </div>
-      <div class="mySlides fade">
-      <p class="w3-center" style="font-size: 29px; font-weight: 400;line-height: 40px;"> Incredible team!<br/> Their prompt response and efficient solutions have been instrumental in keeping our systems running smoothly.</p>
-      <p class="w3-center w3-text-orange"  style="font-size: 23px; font-weight: 400;line-height: 40px;"> <b> Dave <br/> Kogitas (MCPC) Limited, UK </b> </p>
-      </div>
-      <div class="mySlides fade">
-      <p class="w3-center" style="font-size: 29px; font-weight: 400;line-height: 40px;"> Reliable and innovative!<br/>Their IT solutions have significantly boosted our productivity and security. A trusted partner indeed.</p>
-      <p class="w3-center w3-text-orange"  style="font-size: 23px; font-weight: 400;line-height: 40px;"> <b> Rajeeve <br/> TVIN,INDIA </b> </p>
-    </div>
-      <div class="w3-center w3-padding-32" >
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span> 
-     
-      </div>
-    </div>
-     <div  class="w3-col s2" style="margin-top: 100px; ">
-      <a class="w3-right"  onclick="plusSlides(1)"> <i class="fa fa-long-arrow-right w3-hover-opacity w3-xxxlarge"></i></a>
-    </div>
-    </div>
-    <div class="banner w3-padding-64 element">
-      <p class="w3-text-white w3-hide-small" style="font-size: 40px; line-height: 42px;  z-index: 3;  position: relative; margin-top: 16px;"> <b>Increasing the level <br>of customer<br> satisfaction in every <br>management</b></p>
-      <p class="w3-text-white w3-hide-medium w3-hide-large" style="font-size: 32px; line-height: 42px;  z-index: 3;  position: relative;"> <b>Increasing the level <br>of customer<br> satisfaction in every <br>management</b></p>
-    </div>
-     
-<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
-<footer class="w3-deep-blue w3-padding-32 element">
- <!--  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a> -->
-<div class="w3-row-padding">
- <div class="w3-quarter">
-<h1 class="w3-text-white"><img  alt="company logo icon" src="./images/company_icon.png"/><strong> SYNEZ</strong></h1>
-<p class="w3-medium" style="font-size:40px;">We offer businesses the<br> technologies they need to<br> become successful businesses <br>in today’s world.</p>
-</div>
- <div class="w3-quarter w3-medium w3-padding-small">
-    <h4 class="w3-padding-16">Explore</h4>
-    <p><a style="text-decoration:none"  href="#home">HOME</a></p>
-    <p><a style="text-decoration:none" href="#about">ABOUT US</a></p>
-    <p><a style="text-decoration:none"  href="#softwareDev">SOFTWARE DEVELOPMENT</a></p>
-    <p><a style="text-decoration:none" href="#MngSer">MANAGED SERVICES</a></p>
-    <p><a style="text-decoration:none" href="#Consulting">CONSULTING</a></p>
- </div>
- <div class="w3-quarter w3-medium w3-padding-small" >
-  <h4 class="w3-padding-16">Keep in touch</h4>
-  <ul class="w3-ul" style="display: grid; gap: 12px;">
-    <li style="display: flex;align-items: flex-start; padding: 0; margin: 0;">
-      Address:
-        <div  style="margin-left: 12px;">
-          <p style="margin: 0;"> C-56/30 Sector 62 </p>
-          <p style="margin: 0;">Noida 201307,</p>
-        <p style="margin: 0;">Uttar Pradesh, India</p>
+      <div class="button-zone" id="buttonZone">
+        <div id="yesWrap">
+          <button class="btn" id="yesBtn">Yes, of course! 💞</button>
         </div>
-    </li> 
-    <li style="display: flex;align-items: flex-start;padding: 0; margin: 0; ">
-      Phone:
-        <div  style="margin-left: 12px;">
-          <p style="margin: 0;">120 3112279, 120 3112280</p>
-        </div>
-    </li> 
-    <li style="display: flex;align-items: flex-start; padding: 0; margin: 0;">
-      Mobile:
-        <div  style="margin-left: 12px;">
-          <p style="margin: 0;">+91 7290 040506</p>
-        </div>
-    </li> 
-    <li style="display: flex;align-items: flex-start; padding: 0; margin: 0;">
-      Email:
-        <div  style="margin-left: 12px;">
-          <a href="mailto:info@synzetech.com">info@synzetech.com</a>
-        </div>
-    </li> 
-</ul>
-</div>
-    <div class="w3-quarter w3-medium w3-padding-small" style="display: flex ; justify-content: center;">
-        
-        <div class="social-icon w3-half">
-            <a href="mailto:info@syneztech.com"><i class="fa fa-envelope w3-hover-opacity"></i></a>
-          </div>
-          <div class="social-icon w3-half">
-            <a href="https://www.linkedin.com/company/synez-tech/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-          </div>
-         </div>
-</div>
-<div class="w3-border-top"> </div>
- <div class="w3-padding-16" style="font-size: 14px;">Copyright © 2023. Synez Technologies</div>
- </footer>
+        <button class="btn" id="noBtn" aria-label="No">No 🙈</button>
+      </div>
+    </section>
 
- 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
+    <section id="yesPage" class="hidden romance">
+      <div class="big-heart">💘</div>
+      <h1>Yaaay, Peach! 💐</h1>
+      <p class="love-note">
+        I'm taking you out to Swiss for dinner when we celebrate our love.
+        A dreamy evening, cozy smiles, and a thousand little moments with you.
+      </p>
+      <p class="subtitle">
+        I can’t wait to hold your hand and make this Valentine unforgettable. ✨
+      </p>
+    </section>
+  </main>
 
+  <script>
+    const noBtn = document.getElementById('noBtn');
+    const yesBtn = document.getElementById('yesBtn');
+    const buttonZone = document.getElementById('buttonZone');
+    const questionPage = document.getElementById('questionPage');
+    const yesPage = document.getElementById('yesPage');
 
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
+    function moveNoButton() {
+      const zoneRect = buttonZone.getBoundingClientRect();
+      const btnRect = noBtn.getBoundingClientRect();
 
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
-}
+      const maxX = Math.max(0, zoneRect.width - btnRect.width - 6);
+      const maxY = Math.max(0, zoneRect.height - btnRect.height - 6);
 
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
+      const randomX = Math.random() * maxX;
+      const randomY = Math.random() * maxY;
 
-document.addEventListener("DOMContentLoaded", function() {
-    document.querySelectorAll('.w3-bar .w3-bar-item.w3-button').forEach(function(element) {
-        element.addEventListener('click', function() {
-            // Remove 'active' class from all elements
-            document.querySelectorAll('.w3-bar .w3-bar-item.w3-button').forEach(function(el) {
-                el.classList.remove('active');
-            });
+      noBtn.style.left = `${randomX}px`;
+      noBtn.style.top = `${randomY}px`;
+    }
 
-            // Add 'active' class to the clicked element
-            this.classList.add('active');
-        });
+    ['mouseenter', 'click', 'touchstart', 'pointerdown'].forEach((eventName) => {
+      noBtn.addEventListener(eventName, (event) => {
+        event.preventDefault();
+        moveNoButton();
+      }, { passive: false });
     });
-});
-var slideIndex = 1;
-showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+    yesBtn.addEventListener('click', () => {
+      questionPage.classList.add('hidden');
+      yesPage.classList.remove('hidden');
+    });
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
-      slides[i].style.opacity = 0;
-  }
-  slides[slideIndex-1].style.display = "block"; 
-  setTimeout(function(){ slides[slideIndex-1].style.opacity = 1; }, 10);
-}
-   
-</script>
-
+    window.addEventListener('resize', moveNoButton);
+    moveNoButton();
+  </script>
 </body>
 </html>
